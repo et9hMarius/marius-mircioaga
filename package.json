@@ -2,7 +2,6 @@
   "name": "portfolio-marius",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://et9hMarius.github.io/marius-mircioaga",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
