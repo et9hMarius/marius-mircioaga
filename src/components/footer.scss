@@ -1,0 +1,54 @@
+$background_1: #20272f;
+$background_2: #171c22;
+
+$accent_purple: #b40fff;
+$accent_purple_2: #b03aed;
+$accent_indigo: #6c3fdb;
+
+$accent_orange: #fc5b3b;
+$accent_orange_faded: #ff8357;
+$accent_orange_red: #f33019;
+
+$creamy_white: #fee6d4;
+$metalic_white: #d9d9d9;
+
+.footer {
+  background-color: $background_2;
+  padding: 35px 0 35px 0;
+  font-size: 14px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      .box {
+        max-width: 100%;
+        min-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .box {
+      max-width: 33%;
+      min-width: 33%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      div {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .title {
+    font-size: 16px;
+  }
+  a:hover {
+    color: $accent_purple;
+  }
+  a {
+    transition: all 0.2s ease-in-out;
+  }
+}

@@ -1,0 +1,59 @@
+$background_1: #20272f;
+$background_2: #171c22;
+
+$accent_purple: #b40fff;
+$accent_purple_2: #b03aed;
+$accent_indigo: #6c3fdb;
+
+$accent_orange: #fc5b3b;
+$accent_orange_faded: #ff8357;
+$accent_orange_red: #f33019;
+
+$creamy_white: #fee6d4;
+$metalic_white: #d9d9d9;
+
+.section-three {
+  width: auto;
+  background-color: $background_1;
+
+  .content {
+    padding: 50px 40px 0 40px;
+    @media (max-width: 1000px) {
+      padding: 50px 10px 0 10px;
+    }
+    .subtitle {
+      font-size: 20px;
+      padding: 2.5px 0;
+      @media (max-width: 1000px) {
+        text-align: center;
+      }
+    }
+    .underline {
+      width: 100px;
+      height: 3.5px;
+      background-color: $accent_purple;
+      margin: 0.5px 0 15px 0;
+      @media (max-width: 1000px) {
+        margin: 0 auto 30px auto;
+      }
+    }
+    .title {
+      font-size: 40px;
+      padding: 2.5px 0;
+      @media (max-width: 1000px) {
+        text-align: center;
+      }
+    }
+    .project-cards {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      .proj_card {
+        padding: 30px 0;
+        margin: 20px 0;
+      }
+    }
+  }
+}

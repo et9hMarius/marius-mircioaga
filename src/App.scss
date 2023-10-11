@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Futura Lt BT";
+  src: url("./assets/fonts/futura light bt.ttf");
+}
+
+@font-face {
+  font-family: "Futura Md BT";
+  src: url("./assets/fonts/futura medium bt.ttf");
+}
+
+$background_1: #20272f;
+$background_2: #171c22;
+
+$accent_purple: #b40fff;
+$accent_purple_2: #b03aed;
+$accent_indigo: #6c3fdb;
+
+$accent_orange: #fc5b3b;
+$accent_orange_faded: #ff8357;
+$accent_orange_red: #f33019;
+
+$creamy_white: #fee6d4;
+$metalic_white: #d9d9d9;
+
+$grey: #5a718afe;
+
+body {
+  font-family: "Futura Md BT";
+  color: $metalic_white;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: $accent_purple;
+  color: $metalic_white;
+}
+
+::-moz-selection {
+  background: $accent_purple;
+  color: $metalic_white;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.container {
+  min-width: 1000px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: 1000px) {
+    min-width: 95vw;
+    max-width: 95vw;
+  }
+}
+
+.desktop {
+  @media (max-width: 1000px) {
+    display: none !important;
+  }
+}
+
+.mobile {
+  @media (min-width: 1000px) {
+    display: none !important;
+  }
+}
+
+.light {
+  font-family: "Futura Lt BT" !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.purple {
+  color: $accent_purple !important;
+}
+
+.orange {
+  color: $accent_orange !important;
+}
+
+.grey {
+  color: $grey !important;
+}
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: $background_2;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $accent_orange_faded;
+    border-radius: 10px;
+  }
+}

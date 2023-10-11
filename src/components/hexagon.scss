@@ -1,0 +1,32 @@
+.generator {
+  .hexagon-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .hexagon {
+    position: absolute;
+    transform-origin: center;
+    animation: floatUp 5s linear infinite, fadeOut 5s linear infinite;
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-25vh) rotate(90deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

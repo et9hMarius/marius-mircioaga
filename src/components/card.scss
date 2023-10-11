@@ -1,0 +1,84 @@
+$background_1: #20272f;
+$background_2: #171c22;
+
+$accent_purple: #b40fff;
+$accent_purple_2: #b03aed;
+$accent_indigo: #6c3fdb;
+
+$accent_orange: #fc5b3b;
+$accent_orange_faded: #ff8357;
+$accent_orange_red: #f33019;
+
+$creamy_white: #fee6d4;
+$metalic_white: #d9d9d9;
+
+.card {
+  background-color: $background_1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  margin-bottom: 20px;
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  img {
+    width: 80px;
+  }
+  .card-body {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    p {
+      text-align: justify;
+      align-self: flex-end;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    min-height: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+//flashlight effect
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+$metalic_white_01: rgba(217, 217, 217, 0.175);
+.card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    $metalic_white_01,
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+//fix text not selectable
+.card {
+  h2,
+  p {
+    z-index: 400;
+  }
+}
