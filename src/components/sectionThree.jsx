@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./projectCard";
 
 import "./sectionThree.scss";
+import Reveal from "./reveal";
 
 const cards = [
   {
@@ -59,11 +60,13 @@ const SectionThree = () => {
     <div className="section-three">
       <div className="container">
         <div className="content">
-          <div className="subtitle">
-            My <span className="purple">work</span>
-          </div>
-          <div className="title"> Some of my projects</div>
-          <div className="underline" />
+          <Reveal direction="left">
+            <div className="subtitle">
+              My <span className="purple">work</span>
+            </div>
+            <div className="title"> Some of my projects</div>
+            <div className="underline" />
+          </Reveal>
           <div className="project-cards">
             {cards.map((card) => {
               return <ProjectCard key={card.id} {...card} />;
