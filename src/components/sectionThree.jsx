@@ -7,9 +7,9 @@ import Reveal from "./reveal";
 const cards = [
   {
     keyId: 1,
-    id: "example_landing_page",
+    id: "importdinchina",
     image: "/images/projects/1.png",
-    title: "Example Landing Page",
+    title: "Landing Page",
     tech_icons: ["HTML", "React", "JS", "CSS", "SASS"],
     description:
       "A proper landing page is a must for any business and can make or break the first impression. It is designed to be sleek, user-friendly, and responsive.",
@@ -23,10 +23,10 @@ const cards = [
   },
   {
     keyId: 2,
-    id: "example_crud_app",
+    id: "attiva",
     image: "/images/projects/2.png",
-    title: "Example CRUD App",
-    tech_icons: ["HTML", "React", "JS", "CSS", "SASS", "Python", "MongoDB"],
+    title: "CRUD Application",
+    tech_icons: ["HTML", "React", "JS", "CSS", "SASS", "Python", "MySQL"],
     description:
       "Easily handle and showcase your data. It features a user-friendly interface and incorporates a database as well as an admin panel for smooth data management.",
     tags: [
@@ -39,10 +39,10 @@ const cards = [
   },
   {
     keyId: 3,
-    id: "example_e-commerce_app",
+    id: "vintello",
     image: "/images/projects/3.png",
-    title: "Example E-Commerce App",
-    tech_icons: ["HTML", "React", "JS", "CSS", "SASS", "NodeJS", "MySQL"],
+    title: "E-Commerce Application",
+    tech_icons: ["HTML", "React", "JS", "CSS", "SASS", "CSharp", "MySQL"],
     description:
       "A fully functional e-commerce website with an admin panel. Make your business stand out with a user-friendly and responsive website.",
     tags: [
@@ -52,6 +52,33 @@ const cards = [
       "Responsive",
       "Admin Panel",
     ],
+  },
+  {
+    keyId: 4,
+    id: "ceoclubscrm",
+    image: "/images/projects/4.png",
+    title: "CRM Application",
+    tech_icons: ["HTML", "React", "JS", "CSS", "SASS", "CSharp", "MySQL"],
+    description:
+      "A CRM application is a must for any business. It helps you manage your customers and their data. All your data in one place, easily accessible and manageable.",
+    tags: [
+      "CRM",
+      "User Friendly",
+      "Admin Panel",
+      "Responsive",
+      "Data Management",
+    ],
+  },
+
+  {
+    keyId: 5,
+    id: "pathfinder",
+    image: "/images/projects/5.png",
+    title: "Data Visualizer",
+    tech_icons: ["HTML", "React", "JS", "CSS", "SASS", "Python"],
+    description:
+      "A data visualizer is a great way to showcase your data. It helps you understand your data better and makes it easier to analyze it.",
+    tags: ["Data Visualization", "Interactive", "Responsive"],
   },
 ];
 

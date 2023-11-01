@@ -8,6 +8,7 @@ import { faSquareJs } from "@fortawesome/free-brands-svg-icons";
 import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import { faPython } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faC } from "@fortawesome/free-solid-svg-icons";
 
 import { Image, Tooltip } from "antd";
 import "./projectCard.scss";
@@ -25,6 +26,7 @@ const iconMapping = {
   Python: <FontAwesomeIcon icon={faPython} />,
   MySQL: <FontAwesomeIcon icon={faDatabase} />,
   MongoDB: <FontAwesomeIcon icon={faDatabase} />,
+  CSharp: <FontAwesomeIcon icon={faC} />,
 };
 
 const ProjectCard = ({
