@@ -1,10 +1,4 @@
-import React from "react";
-import ProjectCard from "./projectCard";
-
-import "./sectionThree.scss";
-import Reveal from "./reveal";
-
-const cards = [
+export default [
   {
     keyId: 1,
     id: "importdinchina",
@@ -20,6 +14,7 @@ const cards = [
       "Optimized Performance",
       "Responsive",
     ],
+    link: "https://import-din-china.vercel.app",
   },
   {
     keyId: 2,
@@ -36,6 +31,7 @@ const cards = [
       "Admin Panel",
       "Database Integration",
     ],
+    link: "https://attiva.ro",
   },
   {
     keyId: 3,
@@ -52,6 +48,7 @@ const cards = [
       "Responsive",
       "Admin Panel",
     ],
+    link: "https://vintello.ro",
   },
   {
     keyId: 4,
@@ -79,30 +76,6 @@ const cards = [
     description:
       "A data visualizer is a great way to showcase your data. It helps you understand your data better and makes it easier to analyze it.",
     tags: ["Data Visualization", "Interactive", "Responsive"],
+    link: "https://maps-pathfinding-visualiser-ag5r.vercel.app",
   },
 ];
-
-const SectionThree = () => {
-  return (
-    <div className="section-three">
-      <div className="container">
-        <div className="content">
-          <Reveal direction="left">
-            <div className="subtitle">
-              My <span className="purple">work</span>
-            </div>
-            <div className="title"> Some of my projects</div>
-            <div className="underline" />
-          </Reveal>
-          <div className="project-cards">
-            {cards.map((card) => {
-              return <ProjectCard key={card.id} {...card} />;
-            })}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default SectionThree;

@@ -11,10 +11,9 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faC } from "@fortawesome/free-solid-svg-icons";
 
 import { Image, Tooltip } from "antd";
-import "./projectCard.scss";
 import { Link } from "react-router-dom";
 
-import Reveal from "./reveal";
+import Reveal from "../reveal";
 
 const iconMapping = {
   React: <FontAwesomeIcon icon={faReact} />,
@@ -37,17 +36,8 @@ const ProjectCard = ({
   tech_icons,
   description,
   tags,
+  link,
 }) => {
-  console.log(
-    "ProjectCard",
-    keyId,
-    id,
-    image,
-    title,
-    tech_icons,
-    description,
-    tags
-  );
   if (!tags) tags = [];
 
   if (!tech_icons) tech_icons = [];
@@ -80,7 +70,15 @@ const ProjectCard = ({
             <div className="description">{description}</div>
 
             <div className="see_more">
-              <Link to={`/projects/${id}`}>See More</Link>
+              {link ? (
+                <a target="_blank" href={link}>
+                  See More
+                </a>
+              ) : (
+                <a target="_blank" href={`/projects/${id}`}>
+                  See More
+                </a>
+              )}
             </div>
           </div>
         </div>

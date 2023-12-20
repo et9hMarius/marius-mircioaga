@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import "./sectionOne.scss";
 import HexagonContainer from "./hexagonContainer";
-import Reveal from "./reveal";
+import Reveal from "../reveal";
 import { motion, useAnimation, Keyframes } from "framer-motion";
 
 import { useWindowScroll } from "@uidotdev/usehooks";

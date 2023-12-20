@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./hexagon.scss";
 const Hexagon = () => {
   const size = Math.random() * 50 + 30;
   const rotation = Math.random() * 360;

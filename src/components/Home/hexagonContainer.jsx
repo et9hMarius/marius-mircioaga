@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Hexagon from "./hexagon";
-import "./hexagon.scss";
 
 const HexagonContainer = () => {
   const [hexagons, setHexagons] = useState([]);

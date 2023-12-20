@@ -1,18 +1,4 @@
-$background_1: #20272f;
-$background_2: #171c22;
-
-$accent_purple: #b40fff;
-$accent_purple_2: #b03aed;
-$accent_indigo: #6c3fdb;
-
-$accent_orange: #fc5b3b;
-$accent_orange_faded: #ff8357;
-$accent_orange_red: #f33019;
-
-$creamy_white: #fee6d4;
-$metalic_white: #d9d9d9;
-
-.section-four {
+.section-two {
   background: $background_2;
   margin-top: -3px;
   padding-bottom: 20px;
@@ -30,7 +16,7 @@ $metalic_white: #d9d9d9;
   .content {
     padding: 50px 40px 0 40px;
     @media (max-width: 1000px) {
-      padding: 50px 20px 0px 20px;
+      padding: 50px 20px 0 20px;
     }
     .subtitle {
       font-size: 20px;
@@ -57,25 +43,18 @@ $metalic_white: #d9d9d9;
     }
     .cards {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
 
       grid-gap: 20px;
       margin-top: 20px;
       .card {
-        height: 200px;
-        padding-bottom: 70px;
-        h2 {
-          min-height: fit-content;
-        }
+        height: 275px;
       }
       @media (max-width: 1000px) {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0px;
         .card {
           min-height: 175px;
-          height: 275px;
-          padding-bottom: 5%;
-
           p {
             text-align: center !important;
           }

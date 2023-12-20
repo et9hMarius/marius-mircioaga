@@ -1,6 +1,5 @@
 import React from "react";
-import "./sectionTwo.scss";
-import Reveal from "./reveal";
+import Reveal from "../reveal";
 import Card from "./card";
 
 const cardData = [

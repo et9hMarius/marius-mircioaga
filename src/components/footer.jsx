@@ -1,5 +1,4 @@
 import React from "react";
-import "./footer.scss";
 
 const flatIconAtributions = [
   <a href="https://www.flaticon.com/free-icons/teamwork" title="teamwork icons">

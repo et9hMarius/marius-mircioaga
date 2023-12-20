@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./contact.scss";
 import Reveal from "./reveal";
 import { useState } from "react";
 import { Button, ConfigProvider, Form, Input, notification } from "antd";

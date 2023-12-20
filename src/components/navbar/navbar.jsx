@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./navbar.scss";
 import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {

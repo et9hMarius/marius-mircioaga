@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import "./sidebar.scss";
 import { useWindowScroll } from "@uidotdev/usehooks";
 const Sidebar = ({ refs }) => {
   const [active, setActive] = useState(0);

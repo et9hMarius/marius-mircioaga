@@ -1,14 +1,14 @@
 import React from "react";
-import SectionOne from "../components/sectionOne";
-import SectionTwo from "../components/sectionTwo";
+import SectionOne from "../components/Home/sectionOne";
+import SectionTwo from "../components/Home/sectionTwo";
 
 import { useRef } from "react";
 import Sidebar from "../components/sidebar";
-import SectionFour from "../components/sectionFour";
+import SectionFour from "../components/Home/sectionFour";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
-import ProjectCard from "../components/projectCard";
-import SectionThree from "../components/sectionThree";
+import ProjectCard from "../components/Home/projectCard";
+import SectionThree from "../components/Home/sectionThree";
 const Home = () => {
   const sectionOneRef = useRef(null);
   const sectionTwoRef = useRef(null);

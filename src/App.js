@@ -1,14 +1,17 @@
 import logo from "./logo.svg";
 import "./App.scss";
-import Navbar from "./components/navbar";
+import Navbar from "./components/navbar/navbar";
 import Home from "./pages/home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Projects from "./pages/projects";
+import ScrollToTop from "./components/scrollToTop";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <>
+        <ScrollToTop />
         <Navbar />
         <Home />
       </>
@@ -18,17 +21,9 @@ const router = createBrowserRouter([
     path: "/projects",
     element: (
       <>
+        <ScrollToTop />
         <Navbar />
-        "test"
-      </>
-    ),
-  },
-  {
-    path: "/contact",
-    element: (
-      <>
-        <Navbar />
-        "test"
+        <Projects />
       </>
     ),
   },

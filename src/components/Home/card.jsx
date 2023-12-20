@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import "./card.scss";
-
 const Card = ({ title, image, description }) => {
   useEffect(() => {
     const handleMouseMove = (e) => {
