@@ -5,6 +5,8 @@ import Home from "./pages/home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Projects from "./pages/projects";
 import ScrollToTop from "./components/scrollToTop";
+import CeoClubsCRM from "./components/Projects/ceoclubscrm";
+import Contact from "./components/contact";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,17 @@ const router = createBrowserRouter([
         <ScrollToTop />
         <Navbar />
         <Projects />
+      </>
+    ),
+  },
+  {
+    path: "/projects/ceoclubscrm",
+    element: (
+      <>
+        <ScrollToTop />
+        <Navbar />
+        <CeoClubsCRM />
+        <Contact />
       </>
     ),
   },
