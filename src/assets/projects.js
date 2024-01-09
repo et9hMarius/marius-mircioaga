@@ -1,6 +1,7 @@
 export default [
   {
     keyId: 1,
+    show: true,
     id: "importdinchina",
     image: "/images/projects/1.png",
     title: "Landing Page",
@@ -18,6 +19,7 @@ export default [
   },
   {
     keyId: 2,
+    show: true,
     id: "attiva",
     image: "/images/projects/2.png",
     title: "CRUD Application",
@@ -35,6 +37,7 @@ export default [
   },
   {
     keyId: 3,
+    show: true,
     id: "vintello",
     image: "/images/projects/3.png",
     title: "E-Commerce Application",
@@ -52,6 +55,7 @@ export default [
   },
   {
     keyId: 4,
+    show: true,
     id: "ceoclubscrm",
     image: "/images/projects/4.png",
     title: "CRM Application",
@@ -69,6 +73,7 @@ export default [
 
   {
     keyId: 5,
+    show: true,
     id: "pathfinder",
     image: "/images/projects/5.png",
     title: "Data Visualizer",
@@ -77,5 +82,23 @@ export default [
       "A data visualizer is a great way to showcase your data. It helps you understand your data better and makes it easier to analyze it.",
     tags: ["Data Visualization", "Interactive", "Responsive"],
     link: "https://maps-pathfinding-visualiser-ag5r.vercel.app",
+  },
+  {
+    keyId: 6,
+    id: "portfolio",
+    image: "/images/projects/6.png",
+    link: "https://portofolio-fe.vercel.app/",
+  },
+  {
+    keyId: 7,
+    id: "nolimits",
+    image: "/images/projects/7.png",
+    link: "https://portofolio-fe.vercel.app/project/0",
+  },
+  {
+    keyId: 8,
+    id: "masinide16ani",
+    image: "/images/projects/8.png",
+    link: "https://mario-masini-fe.vercel.app",
   },
 ];

@@ -19,7 +19,7 @@ const SectionThree = () => {
           </Reveal>
           <div className="project-cards">
             {cards.map((card) => {
-              return <ProjectCard key={card.id} {...card} />;
+              return card.show ? <ProjectCard key={card.id} {...card} /> : null;
             })}
           </div>
         </div>
