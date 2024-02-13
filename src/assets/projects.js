@@ -70,6 +70,12 @@ export default [
       "Data Management",
     ],
   },
+  {
+    keyId: 11,
+    id: "norisorumidificator",
+    image: "/images/projects/11.png",
+    link: "https://umidificator-mario-et9hmarius.vercel.app/",
+  },
 
   {
     keyId: 5,
