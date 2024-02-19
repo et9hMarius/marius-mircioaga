@@ -11,12 +11,12 @@ const Projects = () => {
   return (
     <>
       <Sidebar refs={[sectionOneRef, sectionTwoRef]} />
-      <div ref={sectionOneRef}>
+      <section id="section_one" ref={sectionOneRef}>
         <ProjectList />
-      </div>
-      <div ref={sectionTwoRef}>
+      </section>
+      <section id="contact" ref={sectionTwoRef}>
         <Contact />
-      </div>
+      </section>
       <Footer />
     </>
   );

@@ -53,18 +53,18 @@ function SectionOne() {
               <div className="subtitle light">
                 Hi, <span className="purple">I’m</span>
               </div>
-              <div className="title">MARIUS MIRCIOAGA</div>
+              <h1 className="title">MARIUS MIRCIOAGA</h1>
               <div className="underline" />
-              <div className="subtitle light">
+              <h2 className="subtitle light">
                 Versatile <span className="purple">Full-Stack Web</span> &{" "}
                 <span className="purple">Software</span> Developer
-              </div>
+              </h2>
 
-              <div className="description light">
+              <p className="description light">
                 Dedicated student and open-minded developer, committed to
                 lifelong learning, ensuring client satisfaction through
                 unyielding persistence.
-              </div>
+              </p>
             </div>
           </Reveal>
           <Reveal direction={"right"}>
@@ -81,7 +81,7 @@ function SectionOne() {
                 width={430}
                 className="marius"
                 src="/images/marius.png"
-                alt=""
+                alt="marius"
               />
             </div>
           </Reveal>

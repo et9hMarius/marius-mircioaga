@@ -66,7 +66,7 @@ const ProjectList = () => {
                               card.link ? card.link : `/projects/${card.id}`
                             }
                           >
-                            <img src={card.image} alt="" />
+                            <img src={card.image} alt={card.title} />
                           </a>
                         </div>
                       </div>

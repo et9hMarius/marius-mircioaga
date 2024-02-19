@@ -31,13 +31,13 @@ const CeoClubsCRM = () => {
             </div>
           </div>
           <div className="image_wrapper">
-            <img src={path + "1.png"} alt="" />
+            <img src={path + "1.png"} alt="project" />
           </div>
         </div>
         <Divider />
         <div className="img_text right">
           <div className="image_wrapper">
-            <Image src={path + "2.png"} alt="" />
+            <Image src={path + "2.png"} alt="project" />
           </div>
           <div className="text_box">
             <div className="title">Features</div>
@@ -89,13 +89,13 @@ const CeoClubsCRM = () => {
             </div>
           </div>
           <div className="image_wrapper">
-            <Image src={path + "3.png"} alt="" />
+            <Image src={path + "3.png"} alt="project" />
           </div>
         </div>
         <Divider />
         <div className="img_text right">
           <div className="image_wrapper">
-            <Image src={path + "4.png"} alt="" />
+            <Image src={path + "4.png"} alt="project" />
           </div>
           <div className="text_box">
             <div className="title">Challenges</div>

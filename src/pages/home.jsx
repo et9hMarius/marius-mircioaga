@@ -21,21 +21,21 @@ const Home = () => {
       <Sidebar
         refs={[sectionOneRef, sectionTwoRef, sectionFourRef, sectionFiveRef]}
       />
-      <div ref={sectionOneRef}>
+      <section id="section_one" ref={sectionOneRef}>
         <SectionOne />
-      </div>
-      <div ref={sectionTwoRef}>
+      </section>
+      <section id="section_two" ref={sectionTwoRef}>
         <SectionTwo />
-      </div>
-      <div ref={sectionThreeRef}>
+      </section>
+      <section id="section_three" ref={sectionThreeRef}>
         <SectionThree />
-      </div>
-      <div ref={sectionFourRef}>
+      </section>
+      <section id="section_four" ref={sectionFourRef}>
         <SectionFour />
-      </div>
-      <div ref={sectionFiveRef}>
+      </section>
+      <section id="contact" ref={sectionFiveRef}>
         <Contact />
-      </div>
+      </section>
       <Footer />
     </>
   );

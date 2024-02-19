@@ -47,10 +47,10 @@ const SectionTwo = () => {
       <div className="container">
         <div className="content">
           <Reveal direction={"left"}>
-            <div className="subtitle">
+            <h1 className="subtitle">
               My <span className="orange">skills</span>
-            </div>
-            <div className="title">What I do</div>
+            </h1>
+            <h1 className="title">What I do</h1>
             <div className="underline" />
           </Reveal>
           <div className="cards">

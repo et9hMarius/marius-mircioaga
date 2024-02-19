@@ -14,6 +14,7 @@ const Hexagon = () => {
         transform: `rotate(${rotation}deg)`,
       }}
       src="/images/hexagon.png"
+      alt="hexagon"
     ></img>
   );
 };
