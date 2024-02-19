@@ -83,15 +83,8 @@ function Footer() {
         <div className="box">
           <div className="title">Asset Attributions:</div>
           <div className="desc">
-            <div>Becris</div>
-            <div>Freepik</div>
+            <div>Becris Freepik</div>
             <div>IconMarketPK</div>
-          </div>
-        </div>
-        <div className="box">
-          <div className="desc">
-            <div>Enamo Studios</div>
-            <div>Shahid-Mehmood</div>
             <div>Vectors Tank</div>
             <div>
               <a
@@ -101,6 +94,20 @@ function Footer() {
               >
                 www.flaticon.com
               </a>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <div className="title">Sitemap:</div>
+          <div className="desc">
+            <div>
+              <a href="/">Home</a>
+            </div>
+            <div>
+              <a href="/projects">Projects</a>
+            </div>
+            <div>
+              <a href="/articles">Articles</a>
             </div>
           </div>
         </div>
