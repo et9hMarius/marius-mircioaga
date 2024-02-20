@@ -18,7 +18,7 @@ const Projects = () => {
           top: -1000,
         }}
       >
-        Let's make your dream project a reality.
+        Marius Mircioaga - Let's make your dream project a reality.
       </h1>
       <h2 style={{ zoom: 0.001, opacity: 0, position: "absolute", top: -1000 }}>
         I offer full-stack web development, built from the ground up, with a
