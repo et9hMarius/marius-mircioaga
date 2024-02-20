@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Home Page -->
   <url>
-    <loc>https://mariusmircioaga.com</loc>
+    <loc>https://mariusmircioaga.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Projects Page -->
   <url>
-    <loc>https://mariusmircioaga.comprojects</loc>
+    <loc>https://mariusmircioaga.com/projects</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- CEO Clubs CRM Page -->
   <url>
-    <loc>https://mariusmircioaga.comprojects/ceoclubscrm</loc>
+    <loc>https://mariusmircioaga.com/projects/ceoclubscrm</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Articles Page -->
   <url>
-    <loc>https://mariusmircioaga.comarticles</loc>
+    <loc>https://mariusmircioaga.com/articles</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Article 1 -->
   <url>
-    <loc>https://mariusmircioaga.comarticles/full-stack-web-development-services</loc>
+    <loc>https://mariusmircioaga.com/articles/full-stack-web-development-services</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Article 2 -->
   <url>
-    <loc>https://mariusmircioaga.comarticles/custom-web-development-solutions</loc>
+    <loc>https://mariusmircioaga.com/articles/custom-web-development-solutions</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Article 3 -->
   <url>
-    <loc>https://mariusmircioaga.comarticles/affordable-web-development-packages</loc>
+    <loc>https://mariusmircioaga.com/articles/affordable-web-development-packages</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Article 4 -->
   <url>
-    <loc>https://mariusmircioaga.comarticles/innovative-digital-solutions</loc>
+    <loc>https://mariusmircioaga.com/articles/innovative-digital-solutions</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Article 5 -->
   <url>
-    <loc>https://mariusmircioaga.comarticles/mobile-app-development-specialists</loc>
+    <loc>https://mariusmircioaga.com/articles/mobile-app-development-specialists</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Article 6 -->
   <url>
-    <loc>https://mariusmircioaga.comarticles/seo-friendly-website-development</loc>
+    <loc>https://mariusmircioaga.com/articles/seo-friendly-website-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Article 7 -->
   <url>
-    <loc>https://mariusmircioaga.comarticles/high-quality-web-development-services</loc>
+    <loc>https://mariusmircioaga.com/articles/high-quality-web-development-services</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
