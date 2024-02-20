@@ -24,11 +24,20 @@ const Home = () => {
           opacity: 0,
           position: "absolute",
           top: -1000,
+          display: "none",
         }}
       >
         Marius Mircioaga - Let's make your dream project a reality.
       </h1>
-      <h2 style={{ zoom: 0.001, opacity: 0, position: "absolute", top: -1000 }}>
+      <h2
+        style={{
+          zoom: 0.001,
+          display: "none",
+          opacity: 0,
+          position: "absolute",
+          top: -1000,
+        }}
+      >
         I offer full-stack web development, built from the ground up, with a
         focus on performance, security, and scalability. I specialize in
         creating custom web applications, e-commerce platforms, and mobile
