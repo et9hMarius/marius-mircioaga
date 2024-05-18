@@ -107,4 +107,15 @@ export default [
     image: "/images/projects/8.png",
     link: "https://mario-masini-fe.vercel.app",
   },
+  {
+    keyId: 9,
+    show: true,
+    id: "AI Chatbot",
+    image: "/images/projects/9.png",
+    title: "AI Chatbot",
+    tech_icons: ["OpenAI", "HTML", "React", "JS", "CSS", "SASS", "Python"],
+    description:
+      "An AI chatbot is a great way to automate your customer service. It is tailored to your business needs and can help you save time and money.",
+    tags: ["AI", "Chatbot", "Responsive", "Interactive"],
+  },
 ];
