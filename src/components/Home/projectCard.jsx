@@ -9,6 +9,7 @@ import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import { faPython } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faC } from "@fortawesome/free-solid-svg-icons";
+import { faRobot } from "@fortawesome/free-solid-svg-icons";
 
 import { Image, Tooltip } from "antd";
 import { Link } from "react-router-dom";
@@ -26,6 +27,7 @@ const iconMapping = {
   MySQL: <FontAwesomeIcon icon={faDatabase} />,
   MongoDB: <FontAwesomeIcon icon={faDatabase} />,
   CSharp: <FontAwesomeIcon icon={faC} />,
+  OpenAI: <FontAwesomeIcon icon={faRobot} />,
 };
 
 const ProjectCard = ({
