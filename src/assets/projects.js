@@ -110,7 +110,7 @@ export default [
   {
     keyId: 20,
     show: true,
-    id: "AI Chatbot",
+    id: "zenkoai",
     image: "/images/projects/9.png",
     title: "AI Chatbot",
     tech_icons: ["OpenAI", "HTML", "React", "JS", "CSS", "SASS", "Python"],

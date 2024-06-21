@@ -16,6 +16,7 @@ import Article4 from "./components/Articles/innovative-digital-solutions";
 import Article5 from "./components/Articles/mobile-app-development-specialists";
 import Article6 from "./components/Articles/seo-friendly-website-development";
 import Article7 from "./components/Articles/high-quality-web-development-services";
+import ZenkoAi from "./components/Projects/zenkoai";
 /*
 full-stack-web-development-services
 custom-web-development-solutions
@@ -54,6 +55,17 @@ const router = createBrowserRouter([
         <ScrollToTop />
         <Navbar />
         <CeoClubsCRM />
+        <Contact />
+      </>
+    ),
+  },
+  {
+    path: "/projects/zenkoai",
+    element: (
+      <>
+        <ScrollToTop />
+        <Navbar />
+        <ZenkoAi />
         <Contact />
       </>
     ),
