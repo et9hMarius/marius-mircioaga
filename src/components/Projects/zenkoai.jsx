@@ -12,7 +12,7 @@ const ZenkoAi = () => {
         </div>
       </div>
       <div className="main_picture">
-        <Image src={path + "main.png"} alt="Zenko AI main interface" />
+        <Image src={path + "4.png"} alt="Zenko AI main interface" />
       </div>
       <Divider />
       <div className="content">
