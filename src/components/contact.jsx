@@ -50,6 +50,10 @@ function Contact() {
                 <span className="purple">Contact</span> me
               </div>
               <div className="title">Let's get in touch</div>
+              <div className="subttile" style={{ marginBottom: 10 }}>
+                For any inquiries, website development, or project
+                collaboration, feel free to contact me.
+              </div>
             </Reveal>
             <Reveal direction={"bottom"}>
               <div className="underline" />
@@ -58,31 +62,69 @@ function Contact() {
           <Reveal direction={"bottom"}>
             <div className="info">
               <div className="row">
-                <div className="title">Marius Mircioaga</div>{" "}
-                <div
-                  style={{
-                    marginTop: -15,
-                    marginBottom: 30,
-                  }}
-                >
-                  <a
-                    target="_blank"
-                    href="mailto:mariusmircioaga@gmail.com?subject=Project%20Collaboration%20Inquiry&body=Hi%20Marius%2C%0A%0A%0A"
-                  >
-                    mariusmircioaga@gmail.com
-                  </a>
-                </div>
-                <div className="desc">
-                  <div>
-                    <img src={"/images/romania.png"} alt="Romanian flag" />
-                    <a href="tel:+40770770365">+40 770 770 365</a>
+                {/* <div className="title">Marius Mircioaga</div>{" "} */}
+                <div className="desc-card-wrapper">
+                  <div className="desc">
+                    <img src={"/images/envelope.png"} alt="Envelope icon" />
+                    <h2> Email Address</h2>
+                    <a
+                      target="_blank"
+                      href="mailto:contact@mariusmircioaga.com?subject=Project%20Collaboration%20Inquiry&body=Hi%20Marius%2C%0A%0A%0A"
+                    >
+                      contact@mariusmircioaga.com
+                    </a>
                   </div>
-                  <span className="grey">or through</span>
+                  <div className="desc">
+                    <img src={"/images/phone.png"} alt="Phone icon" />
+                    <h2> Phone number</h2>
+                    <div>
+                      <img
+                        style={{
+                          height: "1.5em",
+                          marginBottom: "-0.4em",
+                          marginRight: "0.5em",
+                        }}
+                        src={"/images/romania.png"}
+                        alt="Romanian flag"
+                      />
+                      <a href="tel:+40770770365">+40 770 770 365</a>
+                    </div>
+                  </div>
+                </div>
+                <span className="grey">or through</span>
+                <div className="desc-card-wrapper-2">
                   <div>
                     {/* https://wa.me/40770770365 */}
-                    <img src={"/images/whatsapp.png"} alt="Whatsapp logo" />
                     <a target="_blank" href="https://wa.me/40770770365">
-                      Whatsapp
+                      <img src={"/images/whatsapp.png"} alt="Whatsapp logo" />
+                    </a>
+                  </div>
+                  {/* instagram */}
+                  <div>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/_mimarius/"
+                    >
+                      <img src={"/images/instagram.png"} alt="Instagram logo" />
+                    </a>
+                  </div>
+                  {/* linkedin */}
+                  <div>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/marius-mircioaga-b92307299"
+                    >
+                      <img src={"/images/linkedin.png"} alt="Linkedin logo" />
+                    </a>
+                  </div>
+
+                  {/* facebook */}
+                  <div>
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/mariuscristian.mircioaga/"
+                    >
+                      <img src={"/images/facebook.png"} alt="Facebook logo" />
                     </a>
                   </div>
                 </div>
@@ -91,16 +133,12 @@ function Contact() {
             <br />
             <br />
           </Reveal>
-          <Reveal direction={"bottom"}>
+          {/* <Reveal direction={"bottom"}>
             <div className="info">
               <div className="row">
                 <div className="title">leave me a message</div>
               </div>
             </div>
-            {/* "token": {
-    "colorPrimary": "#b40fff",
-    "colorInfo": "#b40fff"
-  } */}
             <ConfigProvider
               theme={{
                 token: {
@@ -153,7 +191,7 @@ function Contact() {
                 </Form.Item>
               </Form>
             </ConfigProvider>
-          </Reveal>
+          </Reveal> */}
         </div>
       </div>
     </div>

@@ -17,15 +17,6 @@ import Article5 from "./components/Articles/mobile-app-development-specialists";
 import Article6 from "./components/Articles/seo-friendly-website-development";
 import Article7 from "./components/Articles/high-quality-web-development-services";
 import ZenkoAi from "./components/Projects/zenkoai";
-/*
-full-stack-web-development-services
-custom-web-development-solutions
-affordable-web-development-packages
-innovative-digital-solutions
-mobile-app-development-specialists
-seo-friendly-website-development
-high-quality-web-development-services
-*/
 
 const router = createBrowserRouter([
   {
@@ -161,7 +152,7 @@ const router = createBrowserRouter([
 ]);
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="app">
       <RouterProvider router={router} />
     </div>
   );

@@ -5,16 +5,20 @@ import SectionTwo from "../components/Home/sectionTwo";
 import { useRef } from "react";
 import Sidebar from "../components/sidebar";
 import SectionFour from "../components/Home/sectionFour";
+import SectionFive from "../components/Home/sectionFive";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
 import ProjectCard from "../components/Home/projectCard";
 import SectionThree from "../components/Home/sectionThree";
+import SectionSix from "../components/Home/sectionSix";
 const Home = () => {
   const sectionOneRef = useRef(null);
   const sectionTwoRef = useRef(null);
   const sectionThreeRef = useRef(null);
   const sectionFourRef = useRef(null);
   const sectionFiveRef = useRef(null);
+  const sectionSixRef = useRef(null);
+  const contactRef = useRef(null);
 
   return (
     <>
@@ -57,7 +61,14 @@ const Home = () => {
       </h2>
 
       <Sidebar
-        refs={[sectionOneRef, sectionTwoRef, sectionFourRef, sectionFiveRef]}
+        refs={[
+          sectionOneRef,
+          sectionTwoRef,
+          sectionSixRef,
+          sectionFiveRef,
+          sectionFourRef,
+          contactRef,
+        ]}
       />
       <section id="section_one" ref={sectionOneRef}>
         <SectionOne />
@@ -68,10 +79,16 @@ const Home = () => {
       <section id="section_three" ref={sectionThreeRef}>
         <SectionThree />
       </section>
+      <section id="section_six" ref={sectionSixRef}>
+        <SectionSix />
+      </section>
+      <section id="section_five" ref={sectionFiveRef}>
+        <SectionFive />
+      </section>
       <section id="section_four" ref={sectionFourRef}>
         <SectionFour />
       </section>
-      <section id="contact" ref={sectionFiveRef}>
+      <section id="contact" ref={contactRef}>
         <Contact />
       </section>
       <Footer />

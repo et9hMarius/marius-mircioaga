@@ -32,6 +32,9 @@ function Navbar() {
               </Link>
             </div>
           </div>
+          <div className="flag">
+            <img width={40} src={"/images/romania.png"} alt="Romanian flag" />
+          </div>
           <ul className="right desktop">
             <li>
               <Link className={active == "" ? "active" : ""} to="/">

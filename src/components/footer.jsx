@@ -74,29 +74,13 @@ function Footer() {
           <div className="title">Marius Mircioaga</div>
           <div>©{Date().split(" ")[3]}</div>
           <div>
-            <a target="_blank" href="mailto:mariusmircioaga@gmail.com">
-              mariusmircioaga@gmail.com
+            <a target="_blank" href="mailto:contact@mariusmircioaga.com">
+              contact@mariusmircioaga.com
             </a>
           </div>
           <div>+40 770 770 365</div>
         </div>
-        <div className="box">
-          <div className="title">Asset Attributions:</div>
-          <div className="desc">
-            <div>Becris Freepik</div>
-            <div>IconMarketPK</div>
-            <div>Vectors Tank</div>
-            <div>
-              <a
-                target="_blank"
-                href="https://www.flaticon.com/"
-                title="Flaticon"
-              >
-                www.flaticon.com
-              </a>
-            </div>
-          </div>
-        </div>
+
         <div className="box">
           <div className="title">Sitemap:</div>
           <div className="desc">
@@ -110,6 +94,30 @@ function Footer() {
               <a href="/articles">Articles</a>
             </div>
           </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <a href="https://anpc.ro/ce-este-sal/" target="_blank">
+            <img
+              src="https://s.cdnmpro.com/129517438/img/badges/badge_anpc_sal.v1671023700.png"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage"
+            target="_blank"
+          >
+            <img
+              src="https://s.cdnmpro.com/129517438/img/badges/badge_eu_sol.v1671023700.png"
+              alt=""
+            />
+          </a>
         </div>
       </div>
     </div>
