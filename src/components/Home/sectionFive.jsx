@@ -4,33 +4,32 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Reveal from "../reveal";
 
-const reviews_en = [
-  {
-    quote:
-      "Any request or issue I had was resolved quickly and professionally. He moves fast and is very reliable. Cool guy to work with, highly recommended.",
-    author: "Marian D.",
-    title: "Marketing Specialist",
-  },
-  {
-    quote:
-      "Marius is a very talented developer and a pleasure to work with. He is extremely flexible, having worked on a variety of projects for us. He is very professional and always delivers on time.",
-    author: "Dr. Laur N.",
-    title: "CEO of Unicorn IT Services",
-  },
-  {
-    quote:
-      "Pleasure to work with. Extremely broad skill set and very reliable.",
-    author: "Luca C.",
-    title: "CEO of High Focus Agency",
-  },
-  {
-    quote:
-      "Professionalism, integrity and pasion. Marius is a great developer and a great person to work with. His work is always top-notch and he is always willing to go the extra mile to make sure the project is a success.",
-    author: "Vincent G.",
-    title: "CEO of Selfit",
-  },
-];
+import { useTranslation } from "react-i18next";
+
 const SectionFive = () => {
+  const { i18n } = useTranslation();
+  const reviews_en = [
+    {
+      quote: i18n.t("quote1"),
+      author: "Marian D.",
+      title: "Marketing Specialist",
+    },
+    {
+      quote: i18n.t("quote2"),
+      author: "Dr. Laur N.",
+      title: "CEO of Unicorn IT Services",
+    },
+    {
+      quote: i18n.t("quote3"),
+      author: "Luca C.",
+      title: "CEO of High Focus Agency",
+    },
+    {
+      quote: i18n.t("quote4"),
+      author: "Vincent G.",
+      title: "CEO of Selfit",
+    },
+  ];
   const settings = {
     dots: true,
     infinite: true,
@@ -56,9 +55,10 @@ const SectionFive = () => {
         <div className="content">
           <Reveal direction="left">
             <div className="subtitle">
-              Testim<span className="purple">onials</span>
+              {i18n.t("testim")}
+              <span className="purple">{i18n.t("onials")}</span>
             </div>
-            <div className="title"> What partners say</div>
+            <div className="title"> {i18n.t("whatpartnerssay")}</div>
             <div className="underline" />
           </Reveal>
           <Reveal direction="bottom">

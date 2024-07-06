@@ -5,8 +5,10 @@ import { motion, useAnimation, Keyframes } from "framer-motion";
 
 import { useWindowScroll } from "@uidotdev/usehooks";
 
+import { useTranslation } from "react-i18next";
 function SectionOne() {
   const [{ x, y }, scrollTo] = useWindowScroll();
+  const { i18n } = useTranslation();
 
   const hexagonAnimation = useAnimation();
   const hexagonVariants = {
@@ -51,20 +53,21 @@ function SectionOne() {
                 <HexagonContainer />
               </div>
               <div className="subtitle light">
-                Hi, <span className="purple">I’m</span>
+                {i18n.t("hi")}, <span className="purple">{i18n.t("im")}</span>
               </div>
               <h1 className="title">MARIUS MIRCIOAGA</h1>
               <div className="underline" />
               <h2 className="subtitle light">
-                Versatile <span className="purple">Full-Stack Web</span> &{" "}
-                <span className="purple">Software</span> Developer
+                {i18n.t("versatile")}{" "}
+                <span className="purple">{i18n.t("full_stack_web")}</span> &{" "}
+                <span className="purple">{i18n.t("software")}</span>{" "}
+                {i18n.t("developer")}
               </h2>
 
-              <p className="description light">
-                Dedicated student and open-minded developer, committed to
-                lifelong learning, ensuring client satisfaction through
-                unyielding persistence.
-              </p>
+              <p className="description light">{i18n.t("description")}</p>
+              <a href="#contact" className="purple ">
+                contact
+              </a>
             </div>
           </Reveal>
           <Reveal direction={"right"}>

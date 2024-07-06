@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
 function Navbar() {
   const [show, setShow] = useState(false);
   const location = useLocation();
   const [active, setActive] = useState(location.pathname.substring(1));
+
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     setActive(location.pathname.substring(1));
@@ -33,7 +36,9 @@ function Navbar() {
             </div>
           </div>
           <div className="flag">
-            <img width={40} src={"/images/romania.png"} alt="Romanian flag" />
+            <a onClick={() => i18n.changeLanguage(i18n.t("switch"))}>
+              <img width={40} src={i18n.t("flag")} alt="Romanian flag" />
+            </a>
           </div>
           <ul className="right desktop">
             <li>

@@ -2,55 +2,53 @@ import React from "react";
 import Reveal from "../reveal";
 import Card from "./card";
 
-const cardData = [
-  {
-    title: "Full-Stack Web Developer",
-    image: "/images/card-web.png",
-    description:
-      "Building websites and web applications using JavaScript, React, HTML, CSS, Node.js, Express and more.",
-  },
-  {
-    title: "Database Administrator",
-    image: "/images/card-database.png",
-    description:
-      "Designing and maintaining databases using SQL and NoSQL. Comfotable with MySQL, PostgreSQL, MongoDB and more.",
-  },
-  {
-    title: "Cloud Architect",
-    image: "/images/card-cloud.png",
-    description:
-      "Deploying and maintaining applications in the cloud using AWS, GCP and Azure. Can configure a Linux server from scratch.",
-  },
-  {
-    title: "Git Version Control Manager",
-    image: "/images/card-git.png",
-    description:
-      "Proficient in code management and maintenance through Git, with extensive experience in GitHub and GitLab.",
-  },
-  {
-    title: "Data Scientist",
-    image: "/images/card-ml.png",
-    description:
-      "Analyzing data and building machine learning models using Python, NumPy, Pandas, Matplotlib, Scikit-Learn and more.",
-  },
-  {
-    title: "Effective Talker & Collaborator",
-    image: "/images/card-networking.png",
-    description:
-      "Open-minded and receptive, adept at effective communication with clients and colleagues, and a skilled listener.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const SectionTwo = () => {
+  const { i18n } = useTranslation();
+  const cardData = [
+    {
+      title: i18n.t("title1"),
+      image: "/images/card-web.png",
+      description: i18n.t("description1"),
+    },
+    {
+      title: i18n.t("title2"),
+      image: "/images/card-database.png",
+      description: i18n.t("description2"),
+    },
+    {
+      title: i18n.t("title3"),
+      image: "/images/card-cloud.png",
+      description: i18n.t("description3"),
+    },
+    {
+      title: i18n.t("title4"),
+      image: "/images/card-ai.png",
+      description: i18n.t("description4"),
+    },
+    {
+      title: i18n.t("title5"),
+      image: "/images/card-ml.png",
+      description: i18n.t("description5"),
+    },
+    {
+      title: i18n.t("title6"),
+      image: "/images/card-mobile.png",
+      description: i18n.t("description6"),
+    },
+  ];
+
   return (
     <div className="section-two">
       <div className="container">
         <div className="content">
           <Reveal direction={"left"}>
             <h1 className="subtitle">
-              My <span className="orange">skills</span>
+              {i18n.t("mele")}{" "}
+              <span className="orange">{i18n.t("skills")}</span>
             </h1>
-            <h1 className="title">What I do</h1>
+            <h1 className="title">{i18n.t("whatido")}</h1>
             <div className="underline" />
           </Reveal>
           <div className="cards">

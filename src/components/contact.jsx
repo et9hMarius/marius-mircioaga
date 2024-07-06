@@ -4,7 +4,10 @@ import { useState } from "react";
 import { Button, ConfigProvider, Form, Input, notification } from "antd";
 import emailjs from "@emailjs/browser";
 
+import { useTranslation } from "react-i18next";
+
 function Contact() {
+  const { i18n } = useTranslation();
   const [form] = Form.useForm();
   const onFinish = (values) => {
     emailjs
@@ -47,12 +50,12 @@ function Contact() {
           <div className="center">
             <Reveal direction={"bottom"}>
               <div className="subtitle">
-                <span className="purple">Contact</span> me
+                <span className="purple">{i18n.t("contact")}</span>{" "}
+                {i18n.t("me")}
               </div>
-              <div className="title">Let's get in touch</div>
+              <div className="title">{i18n.t("getintouch")}</div>
               <div className="subttile" style={{ marginBottom: 10 }}>
-                For any inquiries, website development, or project
-                collaboration, feel free to contact me.
+                {i18n.t("foranyinquiries")}
               </div>
             </Reveal>
             <Reveal direction={"bottom"}>
@@ -66,7 +69,7 @@ function Contact() {
                 <div className="desc-card-wrapper">
                   <div className="desc">
                     <img src={"/images/envelope.png"} alt="Envelope icon" />
-                    <h2> Email Address</h2>
+                    <h2> {i18n.t("emailaddress")}</h2>
                     <a
                       target="_blank"
                       href="mailto:contact@mariusmircioaga.com?subject=Project%20Collaboration%20Inquiry&body=Hi%20Marius%2C%0A%0A%0A"
@@ -76,7 +79,7 @@ function Contact() {
                   </div>
                   <div className="desc">
                     <img src={"/images/phone.png"} alt="Phone icon" />
-                    <h2> Phone number</h2>
+                    <h2> {i18n.t("phonenum")} </h2>
                     <div>
                       <img
                         style={{
@@ -91,7 +94,7 @@ function Contact() {
                     </div>
                   </div>
                 </div>
-                <span className="grey">or through</span>
+                <span className="grey">{i18n.t("orthrough")}</span>
                 <div className="desc-card-wrapper-2">
                   <div>
                     {/* https://wa.me/40770770365 */}
