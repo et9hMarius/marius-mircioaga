@@ -141,4 +141,10 @@ export default [
       "Un chatbot AI este o modalitate excelentă de a automatiza serviciul tău de relații cu clienții. Este personalizat pentru nevoile afacerii tale și te poate ajuta să economisești timp și bani. Chatbot-ul este disponibil 24/7 și poate gestiona mai mulți clienți în același timp.",
     tags: ["AI", "Chatbot", "Responsive", "Interactive"],
   },
+  {
+    keyId: 21,
+    id: "selfit",
+    image: "/images/projects/10.png",
+    link: "https://selfit.app",
+  },
 ];

@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import cards from "../../assets/projects";
 import Reveal from "../reveal";
 
+import { useTranslation } from "react-i18next";
+
 const changeCardsRowed = (width) => {
   let cardsPerRow = 3;
   if (width < 1200) {
@@ -29,6 +31,7 @@ const changeCardsRowed = (width) => {
 };
 
 const ProjectList = () => {
+  const { i18n } = useTranslation();
   const [width, setWidth] = useState(window.innerWidth);
   const [cardsRowed, setCardsRowed] = useState(changeCardsRowed(width));
   useEffect(() => {
@@ -46,9 +49,9 @@ const ProjectList = () => {
     <div className="projectList">
       <div className="header">
         <div className="subtitle">
-          All <span className="purple">my</span>
+          {i18n.t("all")} <span className="purple">{i18n.t("mele2")}</span>
         </div>
-        <div className="title">Projects</div>
+        <div className="title">{i18n.t("projects")}</div>
       </div>
       <div className="projects-cards">
         {cardsRowed &&

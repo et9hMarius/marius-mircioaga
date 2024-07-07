@@ -109,6 +109,10 @@ i18n.use(initReactI18next).init({
         someofmyprojects: "Some of my projects",
         seemore: "See more",
         allprojects: "View more projects",
+        //PROJECTS
+        all: "All",
+        mele2: "my",
+        projects: "Projects",
       },
     },
     // Romanian
@@ -202,6 +206,10 @@ i18n.use(initReactI18next).init({
         someofmyprojects: "Câteva proiecte",
         seemore: "Vezi mai mult",
         allprojects: "Vezi toate proiectele",
+        //PROJECTS
+        all: "Toate",
+        mele2: "proiectele",
+        projects: "Mele",
       },
     },
   },
