@@ -10,6 +10,7 @@ import { faPython } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faC } from "@fortawesome/free-solid-svg-icons";
 import { faRobot } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 import { Image, Tooltip } from "antd";
 import { Link } from "react-router-dom";
@@ -44,6 +45,7 @@ const ProjectCard = ({
 
   if (!tech_icons) tech_icons = [];
 
+  const { i18n } = useTranslation();
   return (
     <Reveal direction={keyId % 2 === 0 ? "right" : "left"}>
       <div>
@@ -74,11 +76,11 @@ const ProjectCard = ({
             <div className="see_more">
               {link ? (
                 <a target="_blank" href={link}>
-                  See More
+                  {i18n.t("seemore")}
                 </a>
               ) : (
                 <a target="_blank" href={`/projects/${id}`}>
-                  See More
+                  {i18n.t("seemore")}
                 </a>
               )}
             </div>

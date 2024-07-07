@@ -103,6 +103,12 @@ i18n.use(initReactI18next).init({
         testim: "Testim",
         onials: "onials",
         whatpartnerssay: "What partners say",
+        //SECTION_THREE
+        mea: "My",
+        work: "Work",
+        someofmyprojects: "Some of my projects",
+        seemore: "See more",
+        allprojects: "View more projects",
       },
     },
     // Romanian
@@ -190,6 +196,12 @@ i18n.use(initReactI18next).init({
         testim: "Testim",
         onials: "oniale",
         whatpartnerssay: "Ce spun clienții",
+        //SECTION_THREE
+        mea: "Munca",
+        work: "Mea",
+        someofmyprojects: "Câteva proiecte",
+        seemore: "Vezi mai mult",
+        allprojects: "Vezi toate proiectele",
       },
     },
   },

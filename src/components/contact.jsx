@@ -67,7 +67,15 @@ function Contact() {
               <div className="row">
                 {/* <div className="title">Marius Mircioaga</div>{" "} */}
                 <div className="desc-card-wrapper">
-                  <div className="desc">
+                  <div
+                    className="desc"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      window.open(
+                        "mailto: contact@mariusmircioaga.com?subject=Project%20Collaboration%20Inquiry&body=Hi%20Marius%2C%0A%0A%0A"
+                      );
+                    }}
+                  >
                     <img src={"/images/envelope.png"} alt="Envelope icon" />
                     <h2> {i18n.t("emailaddress")}</h2>
                     <a
@@ -77,7 +85,13 @@ function Contact() {
                       contact@mariusmircioaga.com
                     </a>
                   </div>
-                  <div className="desc">
+                  <div
+                    className="desc"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      window.open("tel:+40770770365");
+                    }}
+                  >
                     <img src={"/images/phone.png"} alt="Phone icon" />
                     <h2> {i18n.t("phonenum")} </h2>
                     <div>
