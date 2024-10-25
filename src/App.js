@@ -7,7 +7,7 @@ import Projects from "./pages/projects";
 import ScrollToTop from "./components/scrollToTop";
 import CeoClubsCRM from "./components/Projects/ceoclubscrm";
 import Contact from "./components/contact";
-
+import { Analytics } from "@vercel/analytics/react"
 import BlogPage from "./components/Articles/blogPage";
 import Article1 from "./components/Articles/full-stack-web-development-services";
 import Article2 from "./components/Articles/custom-web-development-solutions";
@@ -153,6 +153,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App" id="app">
+		<Analytics/>
       <RouterProvider router={router} />
     </div>
   );
