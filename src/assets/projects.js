@@ -128,6 +128,12 @@ export default [
     link: "https://mario-masini-fe.vercel.app",
   },
   {
+    keyId: 9,
+    id: "intelliv",
+    image: "/images/projects/12.png",
+    link: "https://intelliv.ro",
+  },
+  {
     keyId: 20,
     show: true,
     id: "zenkoai",
