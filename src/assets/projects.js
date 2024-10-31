@@ -134,6 +134,12 @@ export default [
     link: "https://intelliv.ro",
   },
   {
+	  keyId:10,
+	  id:"unicornit",
+    image: "/images/projects/13.png",
+    link: "https://unicorn-tech.org",
+  },
+  {
     keyId: 20,
     show: true,
     id: "zenkoai",
