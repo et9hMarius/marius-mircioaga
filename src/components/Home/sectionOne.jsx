@@ -85,6 +85,7 @@ function SectionOne() {
                 className="marius"
                 src="/images/marius.png"
                 alt="marius"
+                style={{ opacity: 0 }}
               />
             </div>
           </Reveal>
