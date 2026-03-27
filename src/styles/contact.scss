@@ -98,7 +98,7 @@
         align-items: center;
         position: relative;
 
-        background: #171c22;
+        background: var(--bg-2);
         transition: all 0.2s ease-in-out;
         padding: 20px;
         border-radius: 10px;
@@ -118,7 +118,7 @@
       }
 
       .desc:hover {
-        background: #384453;
+        background: var(--card-hover);
       }
     }
   }

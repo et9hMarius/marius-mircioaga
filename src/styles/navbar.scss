@@ -8,8 +8,10 @@
   }
   width: 100%;
   transform: translateX(-50%);
-  background: #171c22;
+  background: var(--bg-2);
   z-index: 1000;
+  transition: background 0.3s ease;
+
   nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -32,12 +34,91 @@
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
       }
     }
-    .flag {
+
+    .nav-controls {
       justify-self: center;
-      img {
-        width: 30px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .lang-switcher {
+      position: relative;
+
+      .lang-toggle {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: none;
+        border: 1px solid var(--text-grey);
+        border-radius: 6px;
+        padding: 6px 10px;
+        color: var(--metalic-white);
+        font-family: inherit;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          border-color: var(--accent-purple);
+          color: var(--accent-purple);
+        }
+      }
+
+      .lang-dropdown {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 6px;
+        background: var(--bg-2);
+        border: 1px solid var(--text-grey);
+        border-radius: 6px;
+        overflow: hidden;
+        z-index: 1001;
+        box-shadow: 0 4px 12px var(--shadow);
+
+        .lang-option {
+          display: block;
+          width: 100%;
+          background: none;
+          border: none;
+          padding: 8px 20px;
+          color: var(--metalic-white);
+          font-family: inherit;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.15s ease;
+
+          &:hover {
+            background: var(--card-hover);
+            color: var(--accent-purple);
+          }
+
+          &.active {
+            color: var(--accent-purple);
+            font-weight: bold;
+          }
+        }
       }
     }
+
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--text-grey);
+      border-radius: 6px;
+      padding: 6px 10px;
+      color: var(--metalic-white);
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        border-color: var(--accent-orange);
+        color: var(--accent-orange);
+      }
+    }
+
     .right {
       position: relative;
       display: flex;
@@ -78,14 +159,14 @@
       }
       .hamburger {
         cursor: pointer;
-        filter: invert(1);
+        filter: invert(var(--invert));
         &.active {
           filter: invert(15%) sepia(72%) saturate(7498%) hue-rotate(280deg)
             brightness(107%) contrast(106%);
         }
       }
       .menu {
-        background: #171c22;
+        background: var(--bg-2);
         padding: 0 50px;
         position: absolute;
         right: -45px;

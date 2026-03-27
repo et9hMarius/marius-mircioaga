@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.scss";
 import Navbar from "./components/navbar/navbar";
 import Home from "./pages/home";
@@ -7,7 +6,7 @@ import Projects from "./pages/projects";
 import ScrollToTop from "./components/scrollToTop";
 import CeoClubsCRM from "./components/Projects/ceoclubscrm";
 import Contact from "./components/contact";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 import BlogPage from "./components/Articles/blogPage";
 import Article1 from "./components/Articles/full-stack-web-development-services";
 import Article2 from "./components/Articles/custom-web-development-solutions";
@@ -17,6 +16,7 @@ import Article5 from "./components/Articles/mobile-app-development-specialists";
 import Article6 from "./components/Articles/seo-friendly-website-development";
 import Article7 from "./components/Articles/high-quality-web-development-services";
 import ZenkoAi from "./components/Projects/zenkoai";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const router = createBrowserRouter([
   {
@@ -150,12 +150,15 @@ const router = createBrowserRouter([
     ),
   },
 ]);
+
 function App() {
   return (
-    <div className="App" id="app">
-		<Analytics/>
-      <RouterProvider router={router} />
-    </div>
+    <ThemeProvider>
+      <div className="App" id="app">
+        <Analytics />
+        <RouterProvider router={router} />
+      </div>
+    </ThemeProvider>
   );
 }
 

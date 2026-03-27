@@ -2,6 +2,7 @@
   padding-top: 100px;
   width: auto;
   background-color: $background_1;
+  transition: background-color 0.3s ease;
   .content {
     padding: 20px 40px 0 40px;
     display: flex;

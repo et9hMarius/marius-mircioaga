@@ -8,13 +8,15 @@ import SectionFour from "../components/Home/sectionFour";
 import SectionFive from "../components/Home/sectionFive";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
-import ProjectCard from "../components/Home/projectCard";
 import SectionThree from "../components/Home/sectionThree";
 import SectionSix from "../components/Home/sectionSix";
+import SectionMeetMe from "../components/Home/sectionMeetMe";
+
 const Home = () => {
   const sectionOneRef = useRef(null);
   const sectionTwoRef = useRef(null);
   const sectionThreeRef = useRef(null);
+  const sectionMeetMeRef = useRef(null);
   const sectionFourRef = useRef(null);
   const sectionFiveRef = useRef(null);
   const sectionSixRef = useRef(null);
@@ -31,7 +33,7 @@ const Home = () => {
           display: "none",
         }}
       >
-        Marius Mircioaga - Let's make your dream project a reality.
+        Marius Mircioaga - Full-Stack Web Developer
       </h1>
       <h2
         style={{
@@ -42,28 +44,17 @@ const Home = () => {
           top: -1000,
         }}
       >
-        I offer full-stack web development, built from the ground up, with a
-        focus on performance, security, and scalability. I specialize in
-        creating custom web applications, e-commerce platforms, and mobile
-        applications. I also offer SEO and digital marketing services to help
-        you grow your business. I am a full-stack web developer with a passion
-        for creating innovative digital solutions. I specialize in creating
-        custom web applications, e-commerce platforms, and mobile applications.
-        I also offer SEO and digital marketing services to help you grow your
-        business. I am a full-stack web developer with a passion for creating
-        innovative digital solutions. I specialize in creating custom web
-        applications, e-commerce platforms, and mobile applications. I also
-        offer SEO and digital marketing services to help you grow your business.
-        I am a full-stack web developer with a passion for creating innovative
-        digital solutions. I specialize in creating custom web applications,
-        e-commerce platforms, and mobile applications. I also offer SEO and
-        digital marketing services to help you grow your business.
+        Full-stack web development, cloud infrastructure, and software
+        engineering. Custom web applications, e-commerce platforms, mobile apps,
+        and AI integrations. Based in Bucharest, serving clients worldwide. CEO
+        at ArchDevs.
       </h2>
 
       <Sidebar
         refs={[
           sectionOneRef,
           sectionTwoRef,
+          sectionMeetMeRef,
           sectionSixRef,
           sectionFiveRef,
           sectionFourRef,
@@ -78,6 +69,9 @@ const Home = () => {
       </section>
       <section id="section_three" ref={sectionThreeRef}>
         <SectionThree />
+      </section>
+      <section id="section_meetme" ref={sectionMeetMeRef}>
+        <SectionMeetMe />
       </section>
       <section id="section_six" ref={sectionSixRef}>
         <SectionSix />

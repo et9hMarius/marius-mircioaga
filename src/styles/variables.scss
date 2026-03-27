@@ -1,13 +1,43 @@
-$background_1: #20272f;
-$background_2: #171c22;
+:root {
+  --bg-1: #20272f;
+  --bg-2: #171c22;
+  --accent-purple: #b40fff;
+  --accent-purple-2: #b03aed;
+  --accent-indigo: #6c3fdb;
+  --accent-orange: #fc5b3b;
+  --accent-orange-faded: #ff8357;
+  --accent-orange-red: #f33019;
+  --creamy-white: #fee6d4;
+  --metalic-white: #d9d9d9;
+  --text-grey: #5a718a;
+  --card-hover: #384453;
+  --shadow: rgba(0, 0, 0, 0.25);
+  --card-glow: rgba(217, 217, 217, 0.175);
+  --invert: 1;
+}
 
-$accent_purple: #b40fff;
-$accent_purple_2: #b03aed;
-$accent_indigo: #6c3fdb;
+[data-theme="light"] {
+  --bg-1: #f0f2f5;
+  --bg-2: #ffffff;
+  --metalic-white: #1a1a2e;
+  --creamy-white: #2d2d44;
+  --text-grey: #6b7280;
+  --card-hover: #e2e5e9;
+  --shadow: rgba(0, 0, 0, 0.08);
+  --card-glow: rgba(100, 100, 100, 0.1);
+  --invert: 0;
+}
 
-$accent_orange: #fc5b3b;
-$accent_orange_faded: #ff8357;
-$accent_orange_red: #f33019;
+$background_1: var(--bg-1);
+$background_2: var(--bg-2);
 
-$creamy_white: #fee6d4;
-$metalic_white: #d9d9d9;
+$accent_purple: var(--accent-purple);
+$accent_purple_2: var(--accent-purple-2);
+$accent_indigo: var(--accent-indigo);
+
+$accent_orange: var(--accent-orange);
+$accent_orange_faded: var(--accent-orange-faded);
+$accent_orange_red: var(--accent-orange-red);
+
+$creamy_white: var(--creamy-white);
+$metalic_white: var(--metalic-white);

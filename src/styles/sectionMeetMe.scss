@@ -1,0 +1,77 @@
+.section-meetme {
+  background-color: $background_1;
+  padding: 60px 0;
+
+  .content {
+    padding: 0 40px;
+    @media (max-width: 1000px) {
+      padding: 0 20px;
+    }
+  }
+
+  .meetme-card {
+    text-align: center;
+    padding: 60px 40px;
+    background: $background_2;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px var(--shadow);
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .gradient {
+    background: linear-gradient(
+      166deg,
+      rgba(180, 15, 255, 0.95) 0%,
+      rgba(252, 91, 59, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .underline {
+    width: 100px;
+    height: 3.5px;
+    background: linear-gradient(
+      166deg,
+      rgba(180, 15, 255, 0.95) 0%,
+      rgba(252, 91, 59, 1) 100%
+    );
+    margin: 10px auto 25px;
+  }
+
+  .description {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white !important;
+    background: linear-gradient(
+      166deg,
+      rgba(180, 15, 255, 0.95) 0%,
+      rgba(252, 91, 59, 1) 100%
+    );
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.85;
+      color: white !important;
+    }
+  }
+}

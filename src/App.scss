@@ -10,22 +10,21 @@
 
 @import "./styles/global";
 
-$grey: #5a718afe;
-
 body {
   font-family: "Futura Md BT";
-  color: $metalic_white;
+  color: var(--metalic-white);
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ::selection {
-  background: $accent_purple;
-  color: $metalic_white;
+  background: var(--accent-purple);
+  color: var(--metalic-white);
 }
 
 ::-moz-selection {
-  background: $accent_purple;
-  color: $metalic_white;
+  background: var(--accent-purple);
+  color: var(--metalic-white);
 }
 
 img {
@@ -69,16 +68,17 @@ a {
 }
 
 .purple {
-  color: $accent_purple !important;
+  color: var(--accent-purple) !important;
 }
 
 .orange {
-  color: $accent_orange !important;
+  color: var(--accent-orange) !important;
 }
 
 .grey {
-  color: $grey !important;
+  color: var(--text-grey) !important;
 }
+
 html {
   scroll-behavior: smooth;
   overflow: auto;
@@ -86,10 +86,10 @@ html {
     width: 5px;
   }
   ::-webkit-scrollbar-track {
-    background: $background_2;
+    background: var(--bg-2);
   }
   ::-webkit-scrollbar-thumb {
-    background: $accent_orange_faded;
+    background: var(--accent-orange-faded);
     border-radius: 10px;
   }
 }

@@ -10,13 +10,13 @@ const SectionThree = () => {
   const [cards, setCards] = useState(cardsRaw);
 
   useEffect(() => {
-    if (i18n.language === "ro") {
+    const lang = i18n.language;
+    if (lang === "ro" || lang === "fr") {
+      const key = lang === "ro" ? "ro" : "fr";
       const temp = cardsRaw.map((card) => {
-        // Create a copy of the card object
         var tempCard = { ...card };
-        // Update the copy with the Romanian descriptions
-        tempCard.description = card.description_ro;
-        tempCard.title = card.title_ro;
+        tempCard.description = card["description_" + key] || card.description;
+        tempCard.title = card["title_" + key] || card.title;
         return tempCard;
       });
       setCards(temp);

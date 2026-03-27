@@ -72,13 +72,12 @@ function Footer() {
       <div className="container grey">
         <div className="box">
           <div className="title">Marius Mircioaga</div>
-          <div>©{Date().split(" ")[3]}</div>
+          <div>&copy;{Date().split(" ")[3]}</div>
           <div>
-            <a target="_blank" href="mailto:contact@mariusmircioaga.com">
-              contact@mariusmircioaga.com
+            <a target="_blank" href="mailto:mariusmircioaga@gmail.com">
+              mariusmircioaga@gmail.com
             </a>
           </div>
-          <div>+40 770 770 365</div>
         </div>
 
         <div className="box">

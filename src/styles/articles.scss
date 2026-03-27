@@ -75,7 +75,7 @@
     }
     .date {
       font-size: 14px;
-      color: $metalic_white_01;
+      color: var(--text-grey);
     }
     h2::before {
       content: "📝";

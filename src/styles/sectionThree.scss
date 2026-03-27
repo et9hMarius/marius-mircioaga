@@ -1,6 +1,7 @@
 .section-three {
   width: auto;
   background-color: $background_1;
+  transition: background-color 0.3s ease;
 
   .content {
     padding: 50px 40px 30px 40px;
@@ -47,15 +48,14 @@
       width: fit-content;
       display: flex;
       justify-content: center;
-      color: white;
+      color: var(--metalic-white);
       transition: all 0.3s ease;
       border-radius: 5px;
-      //text stroke
-      box-shadow: 0 0 0 2px white;
+      box-shadow: 0 0 0 2px var(--metalic-white);
     }
     .view-more:hover {
-      color: #20272f;
-      background-color: white;
+      color: var(--bg-1);
+      background-color: var(--metalic-white);
     }
   }
 }

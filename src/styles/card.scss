@@ -1,9 +1,10 @@
 .card {
   background-color: $background_1;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px var(--shadow);
   padding: 40px 20px;
   margin-bottom: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
   .card-content {
     display: flex;
@@ -51,11 +52,10 @@
   width: 100%;
 }
 
-$metalic_white_01: rgba(217, 217, 217, 0.175);
 .card::before {
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
-    $metalic_white_01,
+    var(--card-glow),
     transparent 40%
   );
   z-index: 3;

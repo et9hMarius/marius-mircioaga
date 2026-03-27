@@ -2,6 +2,7 @@
   background-color: $background_2;
   padding: 35px 0 35px 0;
   font-size: 14px;
+  transition: background-color 0.3s ease;
   .container {
     display: flex;
     justify-content: space-between;
