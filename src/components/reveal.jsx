@@ -42,7 +42,7 @@ function Reveal({ children, direction }) {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
 
   return (
     <div

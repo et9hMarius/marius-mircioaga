@@ -13,7 +13,6 @@ import { faRobot } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
 import { Image, Tooltip } from "antd";
-import { Link } from "react-router-dom";
 
 import Reveal from "../reveal";
 
@@ -75,11 +74,11 @@ const ProjectCard = ({
 
             <div className="see_more">
               {link ? (
-                <a target="_blank" href={link}>
+                <a target="_blank" rel="noreferrer" href={link}>
                   {i18n.t("seemore")}
                 </a>
               ) : (
-                <a target="_blank" href={`/projects/${id}`}>
+                <a target="_blank" rel="noreferrer" href={`/projects/${id}`}>
                   {i18n.t("seemore")}
                 </a>
               )}

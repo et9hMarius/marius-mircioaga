@@ -7,7 +7,7 @@ import { useWindowScroll } from "@uidotdev/usehooks";
 
 import { useTranslation } from "react-i18next";
 function SectionOne() {
-  const [{ x, y }, scrollTo] = useWindowScroll();
+  const [{ y }] = useWindowScroll();
   const { i18n } = useTranslation();
 
   const hexagonAnimation = useAnimation();

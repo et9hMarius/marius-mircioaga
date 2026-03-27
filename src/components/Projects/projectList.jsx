@@ -65,6 +65,7 @@ const ProjectList = () => {
                         <div className="image-wrapper">
                           <a
                             target="_blank"
+                            rel="noreferrer"
                             href={
                               card.link ? card.link : `/projects/${card.id}`
                             }

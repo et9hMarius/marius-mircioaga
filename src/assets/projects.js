@@ -1,4 +1,4 @@
-export default [
+const projects = [
   {
     keyId: 1,
     show: true,
@@ -171,3 +171,4 @@ export default [
     link: "https://selfit.app",
   },
 ];
+export default projects;

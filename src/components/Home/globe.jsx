@@ -1,6 +1,5 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import { Canvas, useFrame, extend, useLoader } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
 import { OBJLoader } from "three-stdlib";
 import { useScroll, animated } from "@react-spring/three";

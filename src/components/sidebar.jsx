@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useWindowScroll } from "@uidotdev/usehooks";
 const Sidebar = ({ refs }) => {
   const [active, setActive] = useState(0);
-  const [{ x, y }, scrollTo] = useWindowScroll();
+  const [{ x, y }] = useWindowScroll();
 
   useEffect(() => {
     if (refs && refs.length > 0) {
@@ -16,7 +16,7 @@ const Sidebar = ({ refs }) => {
         }
       });
     }
-  }, [x, y]);
+  }, [x, y, refs]);
 
   return (
     <div className="sidebar desktop">
@@ -29,7 +29,7 @@ const Sidebar = ({ refs }) => {
               ref.current.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            {active == index ? (
+            {active === index ? (
               <img
                 width={20}
                 src={"/images/diamond_filled.png"}

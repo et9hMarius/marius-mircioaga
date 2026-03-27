@@ -3,7 +3,6 @@ import ProjectCard from "./projectCard";
 import Reveal from "../reveal";
 import cardsRaw from "../../assets/projects";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 const SectionThree = () => {
   const { i18n } = useTranslation();

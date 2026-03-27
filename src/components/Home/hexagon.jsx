@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 const Hexagon = () => {
   const size = Math.random() * 50 + 30;
   const rotation = Math.random() * 360;

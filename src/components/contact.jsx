@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Reveal from "./reveal";
-import { useState } from "react";
-import { Button, ConfigProvider, Form, Input, notification } from "antd";
+import { Form, notification } from "antd";
 import emailjs from "@emailjs/browser";
 
 import { useTranslation } from "react-i18next";
@@ -9,7 +8,7 @@ import { useTranslation } from "react-i18next";
 function Contact() {
   const { i18n } = useTranslation();
   const [form] = Form.useForm();
-  const onFinish = (values) => {
+  const onFinish = (values) => { // eslint-disable-line no-unused-vars
     emailjs
       .send(
         "service_mk3vl0f",
@@ -79,6 +78,7 @@ function Contact() {
                     <h2> {i18n.t("emailaddress")}</h2>
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       href="mailto:mariusmircioaga@gmail.com?subject=Project%20Collaboration%20Inquiry&body=Hi%20Marius%2C%0A%0A%0A"
                     >
                       mariusmircioaga@gmail.com
@@ -90,6 +90,7 @@ function Contact() {
                   <div>
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       href="https://www.linkedin.com/in/marius-mircioaga-b92307299"
                     >
                       <img src={"/images/linkedin.png"} alt="LinkedIn logo" />

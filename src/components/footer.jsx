@@ -1,6 +1,6 @@
 import React from "react";
 
-const flatIconAtributions = [
+const flatIconAtributions = [ // eslint-disable-line no-unused-vars
   <a href="https://www.flaticon.com/free-icons/teamwork" title="teamwork icons">
     Teamwork icons created by Becris - Flaticon
   </a>,
@@ -74,7 +74,7 @@ function Footer() {
           <div className="title">Marius Mircioaga</div>
           <div>&copy;{Date().split(" ")[3]}</div>
           <div>
-            <a target="_blank" href="mailto:mariusmircioaga@gmail.com">
+            <a target="_blank" rel="noreferrer" href="mailto:mariusmircioaga@gmail.com">
               mariusmircioaga@gmail.com
             </a>
           </div>
@@ -102,7 +102,7 @@ function Footer() {
             alignItems: "center",
           }}
         >
-          <a href="https://anpc.ro/ce-este-sal/" target="_blank">
+          <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noreferrer">
             <img
               src="https://s.cdnmpro.com/129517438/img/badges/badge_anpc_sal.v1671023700.png"
               alt=""
@@ -111,6 +111,7 @@ function Footer() {
           <a
             href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               src="https://s.cdnmpro.com/129517438/img/badges/badge_eu_sol.v1671023700.png"
