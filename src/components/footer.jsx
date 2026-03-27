@@ -94,31 +94,6 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noreferrer">
-            <img
-              src="https://s.cdnmpro.com/129517438/img/badges/badge_anpc_sal.v1671023700.png"
-              alt=""
-            />
-          </a>
-          <a
-            href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="https://s.cdnmpro.com/129517438/img/badges/badge_eu_sol.v1671023700.png"
-              alt=""
-            />
-          </a>
-        </div>
       </div>
     </div>
   );
