@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import HexagonContainer from "./hexagonContainer";
 import Reveal from "../reveal";
-import { motion, useAnimation, Keyframes } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 import { useWindowScroll } from "@uidotdev/usehooks";
 
