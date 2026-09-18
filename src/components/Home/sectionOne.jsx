@@ -81,7 +81,7 @@ function SectionOne() {
                 <img width={430} src="/images/hexagon.png" alt="" />
               </motion.div>
               <img
-			    style={{padding:0}}
+			    style={{padding:60}}
                 width={300}
                 className="marius"
                 src="/images/marius.png"
