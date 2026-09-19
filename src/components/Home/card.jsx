@@ -22,9 +22,9 @@ const Card = ({ title, image, description }) => {
   return (
     <div className="card">
       <div className="card-content">
-        <img src={image} alt={title} />
+        <img src={image} alt="" width={80} height={80} loading="lazy" />
         <div className="card-body">
-          <h2>{title}</h2>
+          <h3>{title}</h3>
           <p>{description}</p>
         </div>
       </div>

@@ -85,9 +85,11 @@ function SectionOne() {
               <img
 			    style={{padding:60}}
                 width={300}
+                height={375}
+                fetchpriority="high"
                 className="marius"
                 src="/images/marius.png"
-                alt="marius"
+                alt="Portrait of Marius Mircioaga"
               />
             </div>
           </Reveal>

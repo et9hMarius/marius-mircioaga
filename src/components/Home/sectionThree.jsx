@@ -32,7 +32,7 @@ const SectionThree = () => {
             <div className="subtitle">
               {i18n.t("mea")} <span className="purple">{i18n.t("work")}</span>
             </div>
-            <div className="title"> {i18n.t("someofmyprojects")}</div>
+            <h2 className="title h-plain"> {i18n.t("someofmyprojects")}</h2>
             <div className="underline" />
           </Reveal>
           <div className="project-cards">

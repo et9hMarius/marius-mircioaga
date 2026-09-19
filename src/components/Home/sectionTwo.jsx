@@ -44,11 +44,11 @@ const SectionTwo = () => {
       <div className="container">
         <div className="content">
           <Reveal direction={"left"}>
-            <h1 className="subtitle">
+            <div className="subtitle">
               {i18n.t("mele")}{" "}
               <span className="orange">{i18n.t("skills")}</span>
-            </h1>
-            <h1 className="title">{i18n.t("whatido")}</h1>
+            </div>
+            <h2 className="title h-plain">{i18n.t("whatido")}</h2>
             <div className="underline" />
           </Reveal>
           <div className="cards">

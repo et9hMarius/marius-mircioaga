@@ -1,14 +1,15 @@
 {
-  "short_name": "Mircioaga Marius",
-  "name": "Mircioaga Marius Portfolio",
+  "short_name": "Marius Mircioaga",
+  "name": "Marius Mircioaga — Full-stack & AI integration developer",
+  "description": "Portfolio of Marius Mircioaga, full-stack and AI integration developer in Pitești, Romania, and founder of ARCHDEVS.",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "48x48 32x32 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "images/logo.png",
+      "src": "images/logo-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },

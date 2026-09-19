@@ -36,7 +36,7 @@ const SectionFour = () => {
             <div className="subtitle">
               {i18n.t("meu")} <span className="orange">{i18n.t("about")}</span>
             </div>
-            <div className="title">{i18n.t("whoami")}</div>
+            <h2 className="title h-plain">{i18n.t("whoami")}</h2>
             <div className="underline" />
           </Reveal>
           <div className="cards">

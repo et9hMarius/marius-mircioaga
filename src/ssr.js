@@ -9,9 +9,21 @@ import { StyleProvider, createCache, extractStyle } from "@ant-design/cssinjs";
 import "./i18n/config.ts";
 import App, { routes } from "./App";
 
-export { SITE_URL, pageMeta } from "./seo";
+export {
+  SITE_URL,
+  SITE_NAME,
+  SITE_DESCRIPTION,
+  PERSON,
+  ORGANIZATION,
+  pageMeta,
+  articlePaths,
+  projectPaths,
+} from "./seo";
 
-export const paths = routes.map((route) => route.path);
+// The catch-all route (NotFound) has no URL of its own to prerender.
+export const paths = routes
+  .map((route) => route.path)
+  .filter((path) => !path.includes("*"));
 
 export function render(path) {
   const router = createMemoryRouter(routes, { initialEntries: [path] });
@@ -27,7 +39,8 @@ export function render(path) {
     head:
       helmet.title.toString() +
       helmet.meta.toString() +
-      helmet.link.toString(),
+      helmet.link.toString() +
+      helmet.script.toString(),
     styles: extractStyle(cache),
   };
 }

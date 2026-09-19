@@ -5,6 +5,7 @@ import { RouterProvider } from "react-router-dom";
 import Projects from "./pages/projects";
 import ScrollToTop from "./components/scrollToTop";
 import Seo from "./components/seo";
+import NotFound from "./components/NotFound";
 import CeoClubsCRM from "./components/Projects/ceoclubscrm";
 import Contact from "./components/contact";
 import { Analytics } from "@vercel/analytics/react";
@@ -19,36 +20,27 @@ import Article7 from "./components/Articles/high-quality-web-development-service
 import ZenkoAi from "./components/Projects/zenkoai";
 import { ThemeProvider } from "./context/ThemeContext";
 
+// Every route renders the same chrome around one <main> landmark.
+const page = (content) => (
+  <>
+    <ScrollToTop />
+    <Seo />
+    <Navbar />
+    <main>{content}</main>
+  </>
+);
+
+// Every path here needs an entry in src/seo.js (the prerender step enforces
+// it). Routes are case-sensitive so /Projects lands on the not-found page
+// (noindex) instead of rendering a duplicate of /projects. The "*" route is
+// the not-found page and is prerendered to build/404.html.
 export const routes = [
-  {
-    path: "/",
-    element: (
-      <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
-        <Home />
-      </>
-    ),
-  },
-  {
-    path: "/projects",
-    element: (
-      <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
-        <Projects />
-      </>
-    ),
-  },
+  { path: "/", element: page(<Home />) },
+  { path: "/projects", element: page(<Projects />) },
   {
     path: "/projects/ceoclubscrm",
-    element: (
+    element: page(
       <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
         <CeoClubsCRM />
         <Contact />
       </>
@@ -56,11 +48,8 @@ export const routes = [
   },
   {
     path: "/projects/zenkoai",
-    element: (
+    element: page(
       <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
         <ZenkoAi />
         <Contact />
       </>
@@ -68,11 +57,8 @@ export const routes = [
   },
   {
     path: "/articles",
-    element: (
+    element: page(
       <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
         <BlogPage />
         <Contact />
       </>
@@ -80,11 +66,8 @@ export const routes = [
   },
   {
     path: "/articles/full-stack-web-development-services",
-    element: (
+    element: page(
       <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
         <Article1 />
         <Contact />
       </>
@@ -92,11 +75,8 @@ export const routes = [
   },
   {
     path: "/articles/custom-web-development-solutions",
-    element: (
+    element: page(
       <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
         <Article2 />
         <Contact />
       </>
@@ -104,11 +84,8 @@ export const routes = [
   },
   {
     path: "/articles/affordable-web-development-packages",
-    element: (
+    element: page(
       <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
         <Article3 />
         <Contact />
       </>
@@ -116,11 +93,8 @@ export const routes = [
   },
   {
     path: "/articles/innovative-digital-solutions",
-    element: (
+    element: page(
       <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
         <Article4 />
         <Contact />
       </>
@@ -128,11 +102,8 @@ export const routes = [
   },
   {
     path: "/articles/mobile-app-development-specialists",
-    element: (
+    element: page(
       <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
         <Article5 />
         <Contact />
       </>
@@ -140,11 +111,8 @@ export const routes = [
   },
   {
     path: "/articles/seo-friendly-website-development",
-    element: (
+    element: page(
       <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
         <Article6 />
         <Contact />
       </>
@@ -152,17 +120,26 @@ export const routes = [
   },
   {
     path: "/articles/high-quality-web-development-services",
-    element: (
+    element: page(
       <>
-        <ScrollToTop />
-        <Seo />
-        <Navbar />
         <Article7 />
         <Contact />
       </>
     ),
   },
-];
+  {
+    path: "*",
+    element: (
+      <>
+        <ScrollToTop />
+        <Navbar />
+        <main>
+          <NotFound />
+        </main>
+      </>
+    ),
+  },
+].map((route) => (route.path === "*" ? route : { ...route, caseSensitive: true }));
 
 // The router comes from the caller: a browser router in index.js, a memory
 // router when prerendering (src/ssr.js).

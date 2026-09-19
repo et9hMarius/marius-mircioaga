@@ -33,10 +33,10 @@ const Sidebar = ({ refs }) => {
               <img
                 width={20}
                 src={"/images/diamond_filled.png"}
-                alt="diamond"
+                alt=""
               />
             ) : (
-              <img width={20} src={"/images/diamond_empty.png"} alt="diamond" />
+              <img width={20} src={"/images/diamond_empty.png"} alt="" />
             )}
           </div>
         ))}

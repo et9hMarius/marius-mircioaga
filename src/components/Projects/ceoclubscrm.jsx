@@ -1,24 +1,35 @@
 import React from "react";
 import { Image, Divider } from "antd";
+import Breadcrumbs from "../Breadcrumbs";
 
 const CeoClubsCRM = () => {
   const path = "/images/projects/ceoclubs/";
   return (
     <div className="project-page ceoclubscrm">
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Projects", href: "/projects" },
+          { name: "CEO Clubs CRM" },
+        ]}
+      />
       <div className="header">
-        <div className="title">CEO Clubs CRM</div>
-        <div className="subtitle">
+        <h1 className="title h-plain">CEO Clubs CRM</h1>
+        <p className="subtitle h-plain">
           A Customer Relationship Management for CEO Clubs
-        </div>
+        </p>
       </div>
       <div className="main_picture">
-        <Image src={path + "main.png"} alt="" />
+        <Image
+          src={path + "main.png"}
+          alt="CEO Clubs CRM dashboard with member statistics and gender and nationality charts"
+        />
       </div>
       <Divider />
       <div className="content">
         <div className="img_text left">
           <div className="text_box ">
-            <div className="title align-right">Overview</div>
+            <h2 className="title align-right h-plain">Overview</h2>
             <div className="text align-justify">
               CEO Clubs CRM is a Customer Relationship Management system for CEO
               Clubs. It is a web application that allows CEO Clubs to manage
@@ -31,16 +42,23 @@ const CeoClubsCRM = () => {
             </div>
           </div>
           <div className="image_wrapper">
-            <img src={path + "1.png"} alt="project" />
+            <img
+              src={path + "1.png"}
+              alt="CEO Clubs CRM — application forms list with membership type, company, contact details and pending or accepted status"
+              loading="lazy"
+            />
           </div>
         </div>
         <Divider />
         <div className="img_text right">
           <div className="image_wrapper">
-            <Image src={path + "2.png"} alt="project" />
+            <Image
+              src={path + "2.png"}
+              alt="CEO Clubs CRM — member profile with company details, a personal info tab and a profile completion gauge"
+            />
           </div>
           <div className="text_box">
-            <div className="title">Features</div>
+            <h2 className="title h-plain">Features</h2>
             <div className="text">
               <ul>
                 <li>
@@ -48,14 +66,14 @@ const CeoClubsCRM = () => {
                   guests etc.
                 </li>
                 <li>
-                  — Search and filtering for viewing the before mentioned
+                  — Search and filtering for viewing the above-mentioned
                   entities.
                 </li>
                 <li>
                   — Dashboard for viewing statistics and other important data.
                 </li>
                 <li>
-                  — Changable platform settings such as the enteties types,
+                  — Changeable platform settings such as the entity types,
                   email templates etc.
                 </li>
                 <li>
@@ -67,7 +85,7 @@ const CeoClubsCRM = () => {
                   in-depth html editor for creating and editing email templates.
                 </li>
                 <li>— Acts as a backend for the CEO Clubs mobile app.</li>
-                <li>— Autmated data backup and task scheduling.</li>
+                <li>— Automated data backup and task scheduling.</li>
               </ul>
             </div>
           </div>
@@ -75,7 +93,7 @@ const CeoClubsCRM = () => {
         <Divider />
         <div className="img_text left">
           <div className="text_box">
-            <div className="title align-right">Technologies</div>
+            <h2 className="title align-right h-plain">Technologies</h2>
             <div className="text align-right ">
               <ul>
                 <li>dotNET —</li>
@@ -89,16 +107,22 @@ const CeoClubsCRM = () => {
             </div>
           </div>
           <div className="image_wrapper">
-            <Image src={path + "3.png"} alt="project" />
+            <Image
+              src={path + "3.png"}
+              alt="CEO Clubs CRM — guests list with company and position columns, next to the platform settings menu"
+            />
           </div>
         </div>
         <Divider />
         <div className="img_text right">
           <div className="image_wrapper">
-            <Image src={path + "4.png"} alt="project" />
+            <Image
+              src={path + "4.png"}
+              alt="CEO Clubs CRM — email template editor with a drag-and-drop welcome email design"
+            />
           </div>
           <div className="text_box">
-            <div className="title">Challenges</div>
+            <h2 className="title h-plain">Challenges</h2>
             <div className="text">
               <ul>
                 <li>
@@ -120,13 +144,13 @@ const CeoClubsCRM = () => {
         </div>
         <Divider />
         <div className="header">
-          <div className="subtitle">
+          <p className="subtitle h-plain">
             The CRM is currently being used by{" "}
             <a className="purple" href="https://ceoclubsromania.org">
               CEO Clubs
             </a>
             .
-          </div>
+          </p>
         </div>
       </div>
     </div>

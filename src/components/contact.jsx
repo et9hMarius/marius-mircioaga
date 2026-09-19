@@ -52,7 +52,7 @@ function Contact() {
                 <span className="purple">{i18n.t("contact")}</span>{" "}
                 {i18n.t("me")}
               </div>
-              <div className="title">{i18n.t("getintouch")}</div>
+              <h2 className="title h-plain">{i18n.t("getintouch")}</h2>
               <div className="subttile" style={{ marginBottom: 10 }}>
                 {i18n.t("foranyinquiries")}
               </div>
@@ -74,8 +74,8 @@ function Contact() {
                       );
                     }}
                   >
-                    <img src={"/images/envelope.png"} alt="Envelope icon" />
-                    <h2> {i18n.t("emailaddress")}</h2>
+                    <img src={"/images/envelope.png"} alt="" width={60} height={60} loading="lazy" />
+                    <h3> {i18n.t("emailaddress")}</h3>
                     <a
                       target="_blank"
                       rel="noreferrer"

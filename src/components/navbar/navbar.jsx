@@ -49,7 +49,7 @@ function Navbar() {
               width={40}
               height={40}
               src={"/images/logo.png"}
-              alt="logo"
+              alt="Marius Mircioaga logo"
             />
             <div className="logo-text">
               <Link
@@ -134,7 +134,7 @@ function Navbar() {
                 className={"hamburger" + (show ? " active" : "")}
                 width={30}
                 src={"/images/menu.png"}
-                alt="menu"
+                alt="Open menu"
               />
             </div>
             <div className={"menu" + (show ? " show" : "")}>

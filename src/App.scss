@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Futura Lt BT";
   src: url("./assets/fonts/futura light bt.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Futura Md BT";
   src: url("./assets/fonts/futura medium bt.ttf");
+  font-display: swap;
 }
 
 @import "./styles/global";

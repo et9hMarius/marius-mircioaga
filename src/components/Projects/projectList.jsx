@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import cards from "../../assets/projects";
 import Reveal from "../reveal";
+import Breadcrumbs from "../Breadcrumbs";
 
 import { useTranslation } from "react-i18next";
 
@@ -50,11 +51,12 @@ const ProjectList = () => {
 
   return (
     <div className="projectList">
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Projects" }]} />
       <div className="header">
-        <div className="subtitle">
+        <p className="subtitle h-plain">
           {i18n.t("all")} <span className="purple">{i18n.t("mele2")}</span>
-        </div>
-        <div className="title">{i18n.t("projects")}</div>
+        </p>
+        <h1 className="title h-plain">{i18n.t("projects")}</h1>
       </div>
       <div className="projects-cards">
         {cardsRowed &&
@@ -73,7 +75,11 @@ const ProjectList = () => {
                               card.link ? card.link : `/projects/${card.id}`
                             }
                           >
-                            <img src={card.image} alt={card.title} />
+                            <img
+                              src={card.image}
+                              alt={card.alt || card.title}
+                              loading="lazy"
+                            />
                           </a>
                         </div>
                       </div>

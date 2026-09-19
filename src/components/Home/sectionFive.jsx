@@ -57,7 +57,7 @@ const SectionFive = () => {
               {i18n.t("testim")}
               <span className="purple">{i18n.t("onials")}</span>
             </div>
-            <div className="title"> {i18n.t("whatpartnerssay")}</div>
+            <h2 className="title h-plain"> {i18n.t("whatpartnerssay")}</h2>
             <div className="underline" />
           </Reveal>
           <Reveal direction="bottom">
@@ -72,13 +72,14 @@ const SectionFive = () => {
                     <span className="purple">"</span>
                   </div>
                   <div className="stars">
-                    <img src="/images/stars.png" alt="" />
+                    <img src="/images/stars.png" alt="Five-star rating" loading="lazy" />
                   </div>
                   <div className="quote-author">
                     <img
                       className="author-image"
                       src="/images/man.png"
                       alt=""
+                      loading="lazy"
                     />
                     <div className="author">- John Doe</div>
                   </div>
@@ -91,13 +92,14 @@ const SectionFive = () => {
                       <span className="purple">"</span>
                     </div>
                     <div className="stars">
-                      <img src="/images/stars.png" alt="" />
+                      <img src="/images/stars.png" alt="Five-star rating" loading="lazy" />
                     </div>
                     <div className="quote-author">
                       <img
                         className="author-image"
                         src="/images/man.png"
                         alt=""
+                        loading="lazy"
                       />
                       <div className="author">
                         - {review.author}, {review.title}

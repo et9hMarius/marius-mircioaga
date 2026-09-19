@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import Reveal from "../reveal";
-import Globe from "./globe";
 
 import { useTranslation } from "react-i18next";
+
+// three.js is most of the bundle; load it only once this section renders in the browser.
+const Globe = lazy(() => import("./globe"));
 
 const SectionSix = () => {
   const { i18n } = useTranslation();
@@ -23,7 +25,7 @@ const SectionSix = () => {
       <div className="container">
         <div className="content">
           <Reveal direction={"bottom"}>
-            <div className="title gradient">{i18n.t("servicesoffered")}</div>
+            <h2 className="title gradient h-plain">{i18n.t("servicesoffered")}</h2>
             <div className="underline" />
           </Reveal>
           <div className="services">
@@ -40,10 +42,18 @@ const SectionSix = () => {
             <div className="worldwide">
               <div className="worldwide-text">
                 {i18n.t("worldwide")}
-                <img src="/images/flags.png" alt="Flags" width={300} />
+                <img
+                  src="/images/flags.png"
+                  alt="Flags of Belgium, France, the United States, the United Kingdom and Romania"
+                  width={300}
+                  height={53}
+                  loading="lazy"
+                />
               </div>
               <div className="globe-wrapper" style={{ opacity: 0.75 }}>
-                <Globe />
+                <Suspense fallback={null}>
+                  <Globe />
+                </Suspense>
               </div>
             </div>
           </Reveal>

@@ -2,28 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark light" />
     <meta name="author" content="Marius Mircioaga" />
 
-    <!--
-      Route-specific tags (title, description, canonical, og:title,
-      og:description, og:url) come from src/components/seo.jsx. The prerender
-      step (scripts/prerender.mjs) writes them into each page in place of
-      this fallback <title>.
-    -->
-    <title>Marius Mircioaga — Full-stack &amp; AI integration developer | Founder, ARCHDEVS</title>
-
-    <meta property="og:site_name" content="Marius Mircioaga" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://mariusmircioaga.com/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image" />
-
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="48x48 32x32 16x16" />
+    <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/images/logo.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Marius Mircioaga — Articles"
+      href="%PUBLIC_URL%/feed.xml"
+    />
+
+    <!--
+      Route-specific head tags (title, description, canonical, Open Graph,
+      Twitter card, JSON-LD) come from src/components/seo.jsx, fed by
+      src/seo.js. The prerender step (scripts/prerender.mjs) writes them into
+      each page in place of this fallback <title>.
+    -->
+    <title>Marius Mircioaga — Full-stack &amp; AI integration developer | Founder, ARCHDEVS</title>
 
     <!-- Apply the saved theme before first paint, so prerendered pages don't flash dark. -->
     <script>
@@ -31,31 +32,6 @@
         var theme = localStorage.getItem("theme");
         if (theme) document.documentElement.setAttribute("data-theme", theme);
       } catch (e) {}
-    </script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Marius Mircioaga",
-        "jobTitle": "Founder & Lead Developer",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "ARCHDEVS SRL",
-          "url": "https://archdevs.org"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Pitești",
-          "addressCountry": "RO"
-        },
-        "url": "https://mariusmircioaga.com",
-        "sameAs": [
-          "https://www.linkedin.com/in/marius-mircioaga-b92307299/",
-          "https://github.com/et9hMarius",
-          "https://archdevs.org"
-        ]
-      }
     </script>
   </head>
   <body>

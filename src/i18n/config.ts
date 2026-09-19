@@ -320,4 +320,12 @@ i18n.use(initReactI18next).init({
   },
 });
 
+// Keep <html lang> in sync with the UI language so assistive tech and
+// crawlers see the language the page is actually showing.
+i18n.on("languageChanged", (language: string) => {
+  if (typeof document !== "undefined") {
+    document.documentElement.lang = language;
+  }
+});
+
 export default i18n;

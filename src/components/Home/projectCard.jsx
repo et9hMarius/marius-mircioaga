@@ -34,6 +34,7 @@ const ProjectCard = ({
   keyId,
   id,
   image,
+  alt,
   title,
   tech_icons,
   description,
@@ -50,10 +51,10 @@ const ProjectCard = ({
       <div>
         <div className={"proj_card" + (keyId % 2 === 0 ? " right" : "")}>
           <div className="image">
-            <Image src={image} alt="" />
+            <Image src={image} alt={alt || ""} />
           </div>
           <div className="content_card">
-            <div className="title_card">{title}</div>
+            <h3 className="title_card h-plain">{title}</h3>
             <div className="tech-icons">
               {tech_icons.map((tech, index) => (
                 <Tooltip key={index} title={tech}>

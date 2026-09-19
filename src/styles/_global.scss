@@ -1,3 +1,11 @@
+// Semantic headings that replace styled <div>s keep the div's look; the
+// section styles below set size and weight per context.
+.h-plain {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-family: inherit;
   font-weight: inherit;
@@ -25,3 +33,50 @@ h1 {
 @import "project";
 @import "articles";
 @import "sectionMeetMe";
+
+.breadcrumbs {
+  font-size: 14px;
+  color: var(--text-grey);
+  margin-bottom: 16px;
+  ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    margin: 0;
+  }
+  .breadcrumb-sep {
+    margin-right: 6px;
+  }
+  a {
+    color: inherit;
+  }
+  a:hover {
+    color: $accent_purple;
+  }
+  [aria-current="page"] {
+    color: $metalic_white;
+  }
+}
+
+.not-found {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 140px 20px 60px;
+  background-color: $background_1;
+  h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  p {
+    margin: 6px 0;
+  }
+  a {
+    color: $accent_purple;
+  }
+}

@@ -1,9 +1,13 @@
+// Project cards. `show` marks the ones featured on the home page (with full
+// copy); the rest appear as thumbnails on /projects. `alt` describes the
+// thumbnail for screen readers and image search.
 const projects = [
   {
     keyId: 1,
     show: true,
     id: "importdinchina",
     image: "/images/projects/1.png",
+    alt: "Import din China — landing page screenshot",
     title: "Landing Page",
     title_ro: "Pagina de Prezentare",
     title_fr: "Page d'Atterrissage",
@@ -27,6 +31,7 @@ const projects = [
     show: true,
     id: "attiva",
     image: "/images/projects/2.png",
+    alt: "Attiva — recruitment website home page",
     title: "Data Management Application",
     title_ro: "Aplicație de Management al Datelor",
     title_fr: "Application de Gestion de Données",
@@ -51,6 +56,7 @@ const projects = [
     show: true,
     id: "vintello",
     image: "/images/projects/3.png",
+    alt: "Vintello — e-commerce store screenshot",
     title: "E-Commerce Application",
     title_ro: "Aplicație de Comerț Electronic",
     title_fr: "Application E-Commerce",
@@ -75,6 +81,7 @@ const projects = [
     show: true,
     id: "ceoclubscrm",
     image: "/images/projects/4.png",
+    alt: "CEO Clubs CRM — membership types settings table with prices, durations and visibility",
     title: "CRM App",
     title_ro: "Aplicație de CRM",
     title_fr: "Application CRM",
@@ -97,6 +104,7 @@ const projects = [
     keyId: 11,
     id: "norisorumidificator",
     image: "/images/projects/11.png",
+    alt: "Norișor Umidificator — website screenshot",
     link: "https://umidificator-mario-et9hmarius.vercel.app/",
   },
   {
@@ -104,6 +112,7 @@ const projects = [
     show: true,
     id: "pathfinder",
     image: "/images/projects/5.png",
+    alt: "Maps pathfinding visualiser screenshot",
     title: "Data Visualizer",
     title_ro: "Vizualizarea Datelor",
     title_fr: "Visualiseur de Données",
@@ -121,30 +130,35 @@ const projects = [
     keyId: 6,
     id: "portfolio",
     image: "/images/projects/6.png",
+    alt: "Portfolio — personal website screenshot",
     link: "https://portofolio-fe.vercel.app/",
   },
   {
     keyId: 7,
     id: "nolimits",
     image: "/images/projects/7.png",
+    alt: "No Limits — browsing-time tracker with a per-website usage chart and ranked site list",
     link: "https://portofolio-fe.vercel.app/project/0",
   },
   {
     keyId: 8,
     id: "masinide16ani",
     image: "/images/projects/8.png",
+    alt: "Mașini de 16 ani — website screenshot",
     link: "https://mario-masini-fe.vercel.app",
   },
   {
     keyId: 9,
     id: "intelliv",
     image: "/images/projects/12.png",
+    alt: "Intelliv — website screenshot",
     link: "https://intelliv.ro",
   },
   {
     keyId: 10,
     id: "unicornit",
     image: "/images/projects/13.png",
+    alt: "Unicorn IT Services — website screenshot",
     link: "https://unicorn-tech.org",
   },
   {
@@ -152,6 +166,7 @@ const projects = [
     show: true,
     id: "zenkoai",
     image: "/images/projects/9.png",
+    alt: "Zenko AI — festival chatbot screenshot",
     title: "AI Chatbot",
     title_ro: "Chatbot AI",
     title_fr: "Chatbot IA",
@@ -168,6 +183,7 @@ const projects = [
     keyId: 21,
     id: "selfit",
     image: "/images/projects/10.png",
+    alt: "Selfit — fitness app screens showing a workout timer, profile, daily monitoring questionnaire and target selection",
     link: "https://selfit.app",
   },
 ];

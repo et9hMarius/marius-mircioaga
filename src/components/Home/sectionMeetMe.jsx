@@ -12,7 +12,7 @@ const SectionMeetMe = () => {
           <Reveal direction="bottom">
             <div className="meetme-card">
               <div className="subtitle">{i18n.t("archdevs_subtitle")}</div>
-              <div className="title gradient">ArchDevs</div>
+              <h2 className="title gradient h-plain">ArchDevs</h2>
               <div className="underline" />
               <p className="description light">
                 {i18n.t("archdevs_desc")}

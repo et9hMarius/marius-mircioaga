@@ -1,24 +1,35 @@
 import React from "react";
 import { Image, Divider } from "antd";
+import Breadcrumbs from "../Breadcrumbs";
 
 const ZenkoAi = () => {
   const path = "/images/projects/zenkoai/";
   return (
     <div className="project-page zenkoai">
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Projects", href: "/projects" },
+          { name: "Zenko AI" },
+        ]}
+      />
       <div className="header">
-        <div className="title">Zenko AI</div>
-        <div className="subtitle">
+        <h1 className="title h-plain">Zenko AI</h1>
+        <p className="subtitle h-plain">
           A Chatbot AI Developed During a Hackathon
-        </div>
+        </p>
       </div>
       <div className="main_picture">
-        <Image src={path + "4.png"} alt="Zenko AI main interface" />
+        <Image
+          src={path + "4.png"}
+          alt="Zenko AI chat window answering questions about a festival, next to a meditating robot illustration"
+        />
       </div>
       <Divider />
       <div className="content">
         <div className="img_text left">
           <div className="text_box">
-            <div className="title align-right">Overview</div>
+            <h2 className="title align-right h-plain">Overview</h2>
             <div className="text align-justify">
               Zenko AI is a chatbot designed to provide information about a
               festival. Trained with data from the festival, it can answer user
@@ -28,16 +39,20 @@ const ZenkoAi = () => {
             </div>
           </div>
           <div className="image_wrapper">
-            <img src={path + "1.png"} alt="Zenko AI Overview" />
+            <img
+              src={path + "1.png"}
+              alt="Zenko AI chat locating a kebab stand and the nearest bathroom from the user's GPS position"
+              loading="lazy"
+            />
           </div>
         </div>
         <Divider />
         <div className="img_text right">
           <div className="image_wrapper">
-            <Image src={path + "2.png"} alt="Zenko AI Features" />
+            <Image src={path + "2.png"} alt="Zenko AI answering a fire-emergency question in French and an organiser question in Romanian" />
           </div>
           <div className="text_box">
-            <div className="title">Features</div>
+            <h2 className="title h-plain">Features</h2>
             <div className="text">
               <ul>
                 <li>— Provides detailed information about festival events.</li>
@@ -52,7 +67,7 @@ const ZenkoAi = () => {
         <Divider />
         <div className="img_text left">
           <div className="text_box">
-            <div className="title align-right">Technologies</div>
+            <h2 className="title align-right h-plain">Technologies</h2>
             <div className="text align-right">
               <ul>
                 <li>React —</li>
@@ -65,16 +80,19 @@ const ZenkoAi = () => {
             </div>
           </div>
           <div className="image_wrapper">
-            <Image src={path + "3.png"} alt="Zenko AI Technologies" />
+            <Image
+              src={path + "3.png"}
+              alt="Zenko AI mobile chat panel answering how often bus 102 runs on Saturday"
+            />
           </div>
         </div>
         <Divider />
         <div className="img_text right">
           <div className="image_wrapper">
-            <Image src={path + "4.png"} alt="Zenko AI Challenges" />
+            <Image src={path + "4.png"} alt="Zenko AI chat window answering questions about a festival, next to a meditating robot illustration" />
           </div>
           <div className="text_box">
-            <div className="title">Challenges</div>
+            <h2 className="title h-plain">Challenges</h2>
             <div className="text">
               <ul>
                 <li>
@@ -92,10 +110,10 @@ const ZenkoAi = () => {
         </div>
         <Divider />
         <div className="header">
-          <div className="subtitle">
+          <p className="subtitle h-plain">
             Zenko AI was created during a hackathon and continues to enhance the
             festival experience for attendees.
-          </div>
+          </p>
         </div>
       </div>
     </div>

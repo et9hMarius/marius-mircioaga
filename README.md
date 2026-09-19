@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## SEO and AI-search (GEO) setup
+
+- `src/seo.js` is the single source of truth for every route: title, description, type, visible headline, hero image (with size and alt), `datePublished`/`dateModified` and keywords. Every route in `src/App.js` needs an entry.
+- `src/components/seo.jsx` turns that into the head tags (canonical, robots, Open Graph, Twitter card) and `src/structuredData.js` builds the JSON-LD graph (WebSite, Person, Organization, ProfilePage / CollectionPage / BlogPosting / WebPage, BreadcrumbList).
+- `npm run build` runs `scripts/prerender.mjs`, which renders every route to static HTML and fails the build if a route lacks metadata, a title or description is duplicated, a page has no or several `<h1>`, an image lacks `alt` or is missing, or the JSON-LD does not parse. It also writes `sitemap.xml` (with `lastmod`), `feed.xml` (RSS of the articles) and `llms.txt`.
+- Bump a page's `dateModified` when its content changes; it feeds the sitemap and the article byline.
+- `public/robots.txt` explicitly allows the major search and AI crawlers; `vercel.json` removes trailing slashes and caches images.
+- Unknown URLs are rewritten by `vercel.json` to the prerendered `404.html` (the `NotFound` route: `noindex`, no canonical); the Vercel CRA preset still answers with HTTP 200. Routes are case-sensitive, so `/Projects` is a not-found page too.
+
+Design notes: `docs/superpowers/specs/2026-09-19-seo-geo-optimization-design.md`.
