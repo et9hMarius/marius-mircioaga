@@ -21,8 +21,9 @@ i18n.use(initReactI18next).init({
         full_stack_web: "Full-Stack Web",
         software: "Software",
         developer: "Developer",
+        founder: "Founder",
         description:
-          "Full-stack developer based in Bucharest. I build web applications, manage infrastructure, and deliver software that solves real problems.",
+          "Full-stack developer based in Pitești. I build web applications, manage infrastructure, and deliver software that solves real problems.",
         // SECTION TWO
         mele: "My",
         skills: "Skills",
@@ -51,7 +52,7 @@ i18n.use(initReactI18next).init({
           "Studying at Politehnica University of Bucharest. Started as a self-taught programmer, now backed by formal education and industry certifications.",
         title42: "Work Experience",
         description42:
-          "Built production software for companies across Romania and Europe. Currently leading development at ArchDevs.",
+          "Built production software for companies across Romania and Europe. Founder of ArchDevs, where I lead development.",
         title43: "Extracurriculars",
         description43:
           "Active in hackathons, student organizations, and volunteer work — in tech and beyond.",
@@ -106,7 +107,7 @@ i18n.use(initReactI18next).init({
         // ARCHDEVS SECTION
         archdevs_subtitle: "Meet me at",
         archdevs_desc:
-          "I currently lead ArchDevs as CEO — a software development company focused on delivering high-quality digital products for clients worldwide.",
+          "I'm the founder of ArchDevs — a software development company focused on delivering high-quality digital products for clients worldwide.",
         archdevs_cta: "Visit ArchDevs",
       },
     },
@@ -123,8 +124,9 @@ i18n.use(initReactI18next).init({
         full_stack_web: "Web Full-Stack",
         software: "Software",
         developer: "Senior",
+        founder: "Fondator",
         description:
-          "Dezvoltator full-stack din București. Construiesc aplicații web, gestionez infrastructura și livrez software care rezolvă probleme reale.",
+          "Dezvoltator full-stack din Pitești. Construiesc aplicații web, gestionez infrastructura și livrez software care rezolvă probleme reale.",
         // SECTION TWO
         mele: "Skill-urile",
         skills: "mele",
@@ -153,7 +155,7 @@ i18n.use(initReactI18next).init({
           "Student la Universitatea Politehnica din București. Am început ca programator autodidact, acum susținut de educație formală și certificări din industrie.",
         title42: "Experiență Profesională",
         description42:
-          "Am dezvoltat software de producție pentru companii din România și Europa. Conduc în prezent dezvoltarea la ArchDevs.",
+          "Am dezvoltat software de producție pentru companii din România și Europa. Fondatorul ArchDevs, unde conduc dezvoltarea.",
         title43: "Activități Extra-Curriculare",
         description43:
           "Activ în hackathoane, organizații studențești și voluntariat — în tech și nu numai.",
@@ -208,7 +210,7 @@ i18n.use(initReactI18next).init({
         // ARCHDEVS SECTION
         archdevs_subtitle: "Găsește-mă la",
         archdevs_desc:
-          "Conduc ArchDevs în calitate de CEO — o companie de dezvoltare software axată pe livrarea de produse digitale de calitate pentru clienți din toată lumea.",
+          "Sunt fondatorul ArchDevs — o companie de dezvoltare software axată pe livrarea de produse digitale de calitate pentru clienți din toată lumea.",
         archdevs_cta: "Vizitează ArchDevs",
       },
     },
@@ -225,8 +227,9 @@ i18n.use(initReactI18next).init({
         full_stack_web: "Web Full-Stack",
         software: "Logiciel",
         developer: "Polyvalent",
+        founder: "Fondateur",
         description:
-          "Développeur full-stack basé à Bucarest. Je conçois des applications web, gère l'infrastructure et livre des logiciels qui résolvent des problèmes concrets.",
+          "Développeur full-stack basé à Pitești. Je conçois des applications web, gère l'infrastructure et livre des logiciels qui résolvent des problèmes concrets.",
         // SECTION TWO
         mele: "Mes",
         skills: "Compétences",
@@ -255,7 +258,7 @@ i18n.use(initReactI18next).init({
           "Étudiant à l'Université Politehnica de Bucarest. Autodidacte au départ, maintenant soutenu par une formation académique et des certifications professionnelles.",
         title42: "Expérience Professionnelle",
         description42:
-          "Développement de logiciels en production pour des entreprises en Roumanie et en Europe. Actuellement à la tête du développement chez ArchDevs.",
+          "Développement de logiciels en production pour des entreprises en Roumanie et en Europe. Fondateur d'ArchDevs, où je dirige le développement.",
         title43: "Activités Extrascolaires",
         description43:
           "Actif dans les hackathons, les organisations étudiantes et le bénévolat — dans le domaine tech et au-delà.",
@@ -310,7 +313,7 @@ i18n.use(initReactI18next).init({
         // ARCHDEVS SECTION
         archdevs_subtitle: "Retrouvez-moi chez",
         archdevs_desc:
-          "Je dirige ArchDevs en tant que CEO — une entreprise de développement logiciel axée sur la livraison de produits numériques de qualité pour des clients du monde entier.",
+          "Je suis le fondateur d'ArchDevs — une entreprise de développement logiciel axée sur la livraison de produits numériques de qualité pour des clients du monde entier.",
         archdevs_cta: "Visiter ArchDevs",
       },
     },

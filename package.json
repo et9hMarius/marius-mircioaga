@@ -40,7 +40,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && node scripts/prerender.mjs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -63,6 +63,8 @@
     ]
   },
   "devDependencies": {
+    "@ant-design/cssinjs": "^1.17.0",
+    "esbuild": "^0.28.2",
     "gh-pages": "^6.0.0",
     "typescript": "^6.0.2"
   }

@@ -1,21 +1,8 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
 const Article1 = () => {
   return (
     <article className="articlePage">
-      <Helmet>
-        <title>Full Stack Web Development Services</title>
-        <meta
-          name="description"
-          content="Choosing the right web development company is crucial for your business. How do you know which one is the best fit for you?"
-        />
-        <meta
-          name="keywords"
-          content="full-stack-web-development-services, custom-web-development-solutions, affordable-web-development-packages, innovative-digital-solutions, mobile-app-development-specialists, seo-friendly-website-development, high-quality-web-development-services"
-        />
-      </Helmet>
-
       <h1>
         <strong>Full Stack Web Development Services</strong>
       </h1>

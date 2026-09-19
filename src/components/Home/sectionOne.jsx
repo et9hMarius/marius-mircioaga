@@ -62,6 +62,8 @@ function SectionOne() {
                 <span className="purple">{i18n.t("full_stack_web")}</span> &{" "}
                 <span className="purple">{i18n.t("software")}</span>{" "}
                 {i18n.t("developer")}
+                <br />
+                {i18n.t("founder")}, <span className="purple">ARCHDEVS</span>
               </h2>
 
               <p className="description light">{i18n.t("description")}</p>

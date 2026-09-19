@@ -1,21 +1,8 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
 const Article7 = () => {
   return (
     <article className="articlePage">
-      <Helmet>
-        <title>High-Quality Web Development Services</title>
-        <meta
-          name="description"
-          content="High-quality web development services are essential for creating a professional and functional website that meets your business needs."
-        />
-        <meta
-          name="keywords"
-          content="web development, web design, responsive design, user-friendly interface, search engine optimization, security measures, web development company, content management systems, mobile-friendly development, e-commerce solutions, SEO, load speed, accessibility compliance, testing and quality assurance"
-        />
-      </Helmet>
-
       <h1>
         <strong>High-Quality Web Development Services</strong>
       </h1>

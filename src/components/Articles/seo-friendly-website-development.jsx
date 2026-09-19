@@ -1,21 +1,8 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
 const Article6 = () => {
   return (
     <article className="articlePage">
-      <Helmet>
-        <title>SEO-friendly Website Development</title>
-        <meta
-          name="description"
-          content="Learn about the importance of SEO-friendly website development and how to optimize your website for search engines."
-        />
-        <meta
-          name="keywords"
-          content="SEO, website development, search engine optimization, mobile responsiveness, page speed optimization, keyword research, content creation, technical SEO, user experience, link building, SEO performance"
-        />
-      </Helmet>
-
       <h1>
         <strong>SEO-friendly Website Development</strong>
       </h1>

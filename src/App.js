@@ -1,9 +1,10 @@
 import "./App.scss";
 import Navbar from "./components/navbar/navbar";
 import Home from "./pages/home";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import Projects from "./pages/projects";
 import ScrollToTop from "./components/scrollToTop";
+import Seo from "./components/seo";
 import CeoClubsCRM from "./components/Projects/ceoclubscrm";
 import Contact from "./components/contact";
 import { Analytics } from "@vercel/analytics/react";
@@ -18,12 +19,13 @@ import Article7 from "./components/Articles/high-quality-web-development-service
 import ZenkoAi from "./components/Projects/zenkoai";
 import { ThemeProvider } from "./context/ThemeContext";
 
-const router = createBrowserRouter([
+export const routes = [
   {
     path: "/",
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <Home />
       </>
@@ -34,6 +36,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <Projects />
       </>
@@ -44,6 +47,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <CeoClubsCRM />
         <Contact />
@@ -55,6 +59,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <ZenkoAi />
         <Contact />
@@ -66,6 +71,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <BlogPage />
         <Contact />
@@ -77,6 +83,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <Article1 />
         <Contact />
@@ -88,6 +95,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <Article2 />
         <Contact />
@@ -99,6 +107,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <Article3 />
         <Contact />
@@ -110,6 +119,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <Article4 />
         <Contact />
@@ -121,6 +131,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <Article5 />
         <Contact />
@@ -132,6 +143,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <Article6 />
         <Contact />
@@ -143,15 +155,18 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
+        <Seo />
         <Navbar />
         <Article7 />
         <Contact />
       </>
     ),
   },
-]);
+];
 
-function App() {
+// The router comes from the caller: a browser router in index.js, a memory
+// router when prerendering (src/ssr.js).
+function App({ router }) {
   return (
     <ThemeProvider>
       <div className="App" id="app">

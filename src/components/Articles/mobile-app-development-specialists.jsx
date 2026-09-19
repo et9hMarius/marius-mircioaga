@@ -1,21 +1,8 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
 const Article5 = () => {
   return (
     <article className="articlePage">
-      <Helmet>
-        <title>Mobile App Development Specialists</title>
-        <meta
-          name="description"
-          content="Mobile app development specialists can help you create a custom app that meets your business needs and goals."
-        />
-        <meta
-          name="keywords"
-          content="Mobile App Development, Mobile App Development Specialists, Mobile App Development Skills, Mobile App Development Trends, Mobile App Development Challenges, Mobile App Development Benefits, Outsourcing Mobile App Development"
-        />
-      </Helmet>
-
       <h1>
         <strong>Mobile App Development Specialists</strong>
       </h1>

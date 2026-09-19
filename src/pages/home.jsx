@@ -24,32 +24,6 @@ const Home = () => {
 
   return (
     <>
-      <h1
-        style={{
-          zoom: 0.001,
-          opacity: 0,
-          position: "absolute",
-          top: -1000,
-          display: "none",
-        }}
-      >
-        Marius Mircioaga - Full-Stack Web Developer
-      </h1>
-      <h2
-        style={{
-          zoom: 0.001,
-          display: "none",
-          opacity: 0,
-          position: "absolute",
-          top: -1000,
-        }}
-      >
-        Full-stack web development, cloud infrastructure, and software
-        engineering. Custom web applications, e-commerce platforms, mobile apps,
-        and AI integrations. Based in Bucharest, serving clients worldwide. CEO
-        at ArchDevs.
-      </h2>
-
       <Sidebar
         refs={[
           sectionOneRef,

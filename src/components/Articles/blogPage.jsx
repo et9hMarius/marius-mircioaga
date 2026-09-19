@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Reveal from "../reveal";
 
 /*
@@ -67,19 +66,6 @@ const articleList = [
 const BlogPage = () => {
   return (
     <main className="blog-page">
-      <Helmet>
-        <title>MARIUS MIRCIOAGA: Blog</title>
-        <meta
-          name="description"
-          content="Read the latest articles on web development, digital marketing, and more."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta
-          name="keywords"
-          content="web development, digital marketing, articles"
-        />
-      </Helmet>
-
       <h1>
         Latests <span>Articles</span>
       </h1>

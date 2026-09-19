@@ -1,21 +1,8 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
 const Article2 = () => {
   return (
     <article className="articlePage">
-      <Helmet>
-        <title>Custom Web Development Solutions</title>
-        <meta
-          name="description"
-          content="Custom web development solutions offer unparalleled flexibility and scalability for businesses of all sizes."
-        />
-        <meta
-          name="keywords"
-          content="custom web development, web development, website, custom solutions, web development process, scalability, flexibility, benefits"
-        />
-      </Helmet>
-
       <h1>
         <strong>
           Custom Web Development Solutions: Crafting Your Unique Online Presence

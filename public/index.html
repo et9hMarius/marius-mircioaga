@@ -5,65 +5,55 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-
     <meta name="author" content="Marius Mircioaga" />
-    <meta name="og:author" content="Marius Mircioaga" />
 
-    <meta
-      name="keywords"
-      content="Marius Mircioaga, web developer, front-end developer, full-stack developer, react developer, javascript developer, marius mircioaga, marius mircioaga web developer, marius mircioaga front-end developer, marius mircioaga full-stack developer, marius mircioaga react developer, marius mircioaga javascript developer"
-    />
-
-    <meta
-      name="og:description"
-      content="Full-stack web developer based in Bucharest. Web applications, cloud infrastructure, and software engineering. CEO at ArchDevs."
-    />
-    <meta
-      name="description"
-      content="Full-stack web developer based in Bucharest. Web applications, cloud infrastructure, and software engineering. CEO at ArchDevs."
-    />
-
-    <meta name="og:title" content="Marius Mircioaga - Web Developer" />
-    <meta name="title" content="Marius Mircioaga - Web Developer" />
-
-    <meta name="og:site_name" content="Marius Mircioaga" />
-    <meta name="site_name" content="Marius Mircioaga" />
-
-    <meta name="og:type" content="website" />
-    <meta name="type" content="website" />
-
-    <meta name="og:url" content="https://mariusmircioaga.com" />
-    <meta name="url" content="https://mariusmircioaga.com" />
-
-    <meta name="og:image" content="%PUBLIC_URL%/og-image.png" />
-    <meta name="image" content="%PUBLIC_URL%/og-image.png" />
-
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/og-image.png" />
     <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      Route-specific tags (title, description, canonical, og:title,
+      og:description, og:url) come from src/components/seo.jsx. The prerender
+      step (scripts/prerender.mjs) writes them into each page in place of
+      this fallback <title>.
     -->
+    <title>Marius Mircioaga — Full-stack &amp; AI integration developer | Founder, ARCHDEVS</title>
+
+    <meta property="og:site_name" content="Marius Mircioaga" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mariusmircioaga.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Marius Mircioaga - Web Solutions</title>
-    <!-- Schema.org markup -->
+    <!-- Apply the saved theme before first paint, so prerendered pages don't flash dark. -->
+    <script>
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme) document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    </script>
+
     <script type="application/ld+json">
       {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "Person",
         "name": "Marius Mircioaga",
+        "jobTitle": "Founder & Lead Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ARCHDEVS SRL",
+          "url": "https://archdevs.org"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pitești",
+          "addressCountry": "RO"
+        },
         "url": "https://mariusmircioaga.com",
         "sameAs": [
           "https://www.linkedin.com/in/marius-mircioaga-b92307299/",
-          "https://github.com/et9hMarius"
+          "https://github.com/et9hMarius",
+          "https://archdevs.org"
         ]
       }
     </script>
@@ -71,15 +61,5 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

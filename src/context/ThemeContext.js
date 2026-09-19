@@ -4,6 +4,7 @@ const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
+    if (typeof window === "undefined") return "dark"; // prerendering
     return localStorage.getItem("theme") || "dark";
   });
 

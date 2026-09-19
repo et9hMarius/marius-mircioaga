@@ -1,21 +1,8 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
 const Article3 = () => {
   return (
     <article className="articlePage">
-      <Helmet>
-        <title>Affordable Web Development Packages</title>
-        <meta
-          name="description"
-          content="Affordable web development packages are a great way to get a high-quality website without breaking the bank."
-        />
-        <meta
-          name="keywords"
-          content="affordable web development, web development packages, affordable web development packages"
-        />
-      </Helmet>
-
       <h1>
         <strong>
           Affordable Web Development Packages: Building Your Online Presence

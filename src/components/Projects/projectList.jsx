@@ -32,7 +32,10 @@ const changeCardsRowed = (width) => {
 
 const ProjectList = () => {
   const { i18n } = useTranslation();
-  const [width, setWidth] = useState(window.innerWidth);
+  // No window while prerendering; 1200 gives the desktop layout.
+  const [width, setWidth] = useState(
+    typeof window === "undefined" ? 1200 : window.innerWidth
+  );
   const [cardsRowed, setCardsRowed] = useState(changeCardsRowed(width));
   useEffect(() => {
     window.addEventListener("resize", () => {
